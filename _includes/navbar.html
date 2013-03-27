@@ -2,10 +2,13 @@
 	{% for node in site.pages %}
 		{% if node.group == 'navbar' %}
 			{% if node.weight == weight %}
-				{% if page.url == node.url %}
-					<li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+				{% if weight == 1 %}
 				{% else %}
-					<li><a href="{{node.url}}">{{node.title}}</a></li>
+					{% if page.url == node.url %}
+						<li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+					{% else %}
+						<li><a href="{{node.url}}">{{node.title}}</a></li>
+					{% endif %}
 				{% endif %}
 			{% endif %}
 		{% endif %}

@@ -12,7 +12,7 @@ source:      .
 destination: ./_site
 plugins:     ./_plugins
 includes:    ./_includes
-permalink:   /posts/:title
+permalink:   /blog/archives/:year/:title
 
 future:      true
 lsi:         false

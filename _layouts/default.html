@@ -46,7 +46,11 @@
 							<!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
 						<div class="nav-collapse collapse">
 							<ul class="nav">
-								{% include navbar.html %}
+								{% if page.title == "About" %}<li class="active">{% else %}<li>{% endif %}<a href="/about">About</a></li>
+								{% if page.title == "News" %}<li class="active">{% else %}<li>{% endif %}<a href="/blog">News</a></li>
+								{% if page.title == "Projects" %}<li class="active">{% else %}<li>{% endif %}<a href="/projects">Projects</a></li>
+								{% if page.title == "Data" %}<li class="active">{% else %}<li>{% endif %}<a href="/data">Data</a></li>
+								<li><a href="https://github.com/uamuzibora">Code</a></li>
 							</ul>
 						</div><!--/.nav-collapse -->
 					</div><!-- /.navbar-inner -->
