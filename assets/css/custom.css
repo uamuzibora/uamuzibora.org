@@ -85,6 +85,10 @@ body {
   height:140px;
 }
 
+.no-carousel {
+  margin-top: 100px;
+}
+
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */

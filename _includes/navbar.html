@@ -1,0 +1,10 @@
+{% assign pages_list = site.pages %}
+{% for node in pages_list %}
+	{% if node.group == 'navbar' %}
+		{% if page.url == node.url %}
+			<li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+		{% else %}
+			<li><a href="{{node.url}}">{{node.title}}</a></li>
+		{% endif %}
+	{% endif %}
+{% endfor %}

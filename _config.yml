@@ -11,6 +11,7 @@ description: Making HIV care awesome
 source:      .
 destination: ./_site
 plugins:     ./_plugins
+includes:    ./_includes
 permalink:   /posts/:title
 
 future:      true

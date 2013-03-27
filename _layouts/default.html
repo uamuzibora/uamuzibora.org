@@ -46,9 +46,7 @@
 							<!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
 						<div class="nav-collapse collapse">
 							<ul class="nav">
-								<li class="active"><a href="#">Home</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#contact">Contact</a></li>
+								{% include navbar.html %}
 							</ul>
 						</div><!--/.nav-collapse -->
 					</div><!-- /.navbar-inner -->
@@ -56,15 +54,7 @@
 			</div> <!-- /.container -->
 		</section><!-- /.navbar-wrapper -->
 
-		<section class="container">
-			{{content}}
-				
-			<footer>
-				<hr class="featurette-divider">
-				<p class="pull-right"><a href="#">Back to top</a></p>
-				<p>&copy; 2013 Uamuzi Bora &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-			</footer>
-		</section><!-- /.container -->
+		{{ content }}
 
 		<!-- Le javascript -->
 		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
