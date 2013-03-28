@@ -3,11 +3,16 @@ layout: page
 title: Funding
 ---
 
-Hello world!
+# Partners and Funding
 
-## This is a subheader
+##Grand Challenges Canada
+We are recipients of a Round 3 Rising Stars in Global Health grant from [Grand Challenges Canada](http://www.grandchallenges.ca/) that has enabled us to continue to develop the [HIV EMR](/projects/hiv) and to expand to other clinics in Western Kenya. The grant has also enabled us to pilot the implementation of a [Maternal and Child Health (MCH) EMR](/projects/mch) in five clinics in Western Kenya.
 
-### This is a smaller subheader
+##Japanese International Cooperation Agency (JICA)
+We are working in partnership with the [Japanese International Cooperation Agency (JICA)](http://www.jica.org) to pilot the implementation of a [Maternal and Child Health (MCH) EMR](/projects/mch) in five clinics in Western Kenya.
 
-Do you see any [Teletubbies](/data) in here? Do **you see** a _slender_ plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.
+##Ministry of Health, Kenya
+We work in partnership with the Kenya [Ministry of Health](http://www.publichealth.go.ke) and [National AIDS and STI Control Program (NASCOP)](http://www.nascop.go.ke) and adhere to national standards and pathways of care. The [HIV EMR](/projects/hiv) has been selected as a pilot for a future national EMR and will provide a proof of concept for future scale-up and implementation.
 
+##Vestergaard Frandsen
+[Vestergaard-Frandsen](http://www.vestergaard-frandsen.com) provided initial funding to develop and implement the EMR in 2009, following a community-based campaign of HIV testing that took place in Western Kenya. You can read more of our story [here](/about/story).

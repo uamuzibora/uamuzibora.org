@@ -5,11 +5,14 @@ group: navbar
 weight: 2
 ---
 
-Hello world!
+# Welcome to Uamuzi Bora!
 
-## This is a subheader
+## We are Uamuzi Bora, a medical project working to improve primary health care in Western Kenya.
 
-### This is a smaller subheader
+Uamuzi Bora means _a better choice_ in Luhya, a local language spoken in Western Kenya, where we work, and was chosen by the local communities to describe the work we do.
 
-Do you see any [Teletubbies](/data) in here? Do **you see** a _slender_ plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.
+We believe the delivery of primary health care can be improved through the use of information technology and an electronic medical record, particularly in resource constrained settings such as Western Kenya.
 
+We work with the [Ministry of Health](www.publichealth.go.ke) in Kenya to strengthen existing pathways of primary health care and support, using mobile information technology and an electronic medical record, to improve linkage to care, clinical decision support, adherence to treatment and retention in care.
+
+We hope you enjoy the website and learning more about our [work](/projects). You can read our [story](/about/story) here.

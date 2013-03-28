@@ -3,11 +3,14 @@ layout: page
 title: HIV
 ---
 
-Hello world!
+Despite significant scaling up of HIV services and access to treatment in Kenya, targets for achieving universal access to HIV prevention, treatment, care and support by 2010 were not achieved. 
 
-## This is a subheader
+Knowledge of HIV status remains inadequate and less than 20% of people living with HIV in Kenya know their status. Late diagnosis of HIV and delayed linkage to care following diagnosis is leading to late initiation of treatment and poorer prognoses for patients. Poor adherence to therapy and retention in care is also leading to failure of first-line treatments and progression and relapse of disease.
 
-### This is a smaller subheader
+With the support of [Vestergaard Frandsen](http://www.vestergaard-frandsen.com) and [Grand Challenges Canada](http://www.grandchallenges.ca/), we have developed a free open-source [electronic medical record (EMR)](/projects/hiv/demo), based on [OpenMRS](http://www.openmrs.org), to improve care and support for people living with HIV in Western Kenya. 
 
-Do you see any [Teletubbies](/data) in here? Do **you see** a _slender_ plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.
+We are working with the [Ministry of Health](http://www.publichealth.go.ke) and [Kenya National AIDS and STI Control Program (NASCOP)](http://www.nascop.go.ke) to strengthen existing pathways and protocols of HIV care in Western Kenya to improve linkage to care, clinical decision support, adherence to treatment and retention in care. We support outpatient HIV care for more than 13,000 patients enrolled in two hospitals and four health clinics in Western Kenya and the electronic record is proving to be a valuable tool for clinicians, public health officers and researchers in both Kenya and the UK.
 
+You can see a demo of the HIV EMR [here](/projects/hiv/demo).
+
+You can monitor the impact of the HIV project [here](/data/hiv)
