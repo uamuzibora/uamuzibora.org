@@ -413,3 +413,19 @@ body {
 .bar-chart {
   height: 300px;
 }
+
+/* Change height/width on small displays */
+@media (max-width: 767px) {
+  .overview_timeline_chart, .data_missing_chart svg {
+    height: 200px;
+  }
+
+  .pie_chart {
+    min-width: 200px;
+    min-height: 200px;
+  }
+
+  .bar-chart {
+    height: 200px;
+  }
+}
