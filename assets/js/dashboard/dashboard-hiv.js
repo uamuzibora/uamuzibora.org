@@ -117,7 +117,7 @@ function load_numbers(){
     }
     
     // Last updated
-    $('#lastDate').html(latest_date_d.getDate()+'/'+latest_date_d.getMonth()+'/'+latest_date_d.getFullYear());
+    $('#lastDate').html(pretty_date(latest_date_d));
     
     // *** CHARTS ***
     
