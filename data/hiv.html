@@ -1,0 +1,174 @@
+---
+layout: normal
+title: HIV Dashboard
+extra: dashboard
+---
+		<div class="row">
+			<div class="span12">
+				<ul class="nav nav-tabs" id="tablist">
+					<li class="active">
+						<a href="#home" data-toggle="tab">Home</a>
+					</li>
+					<li>
+						<a href="#overview" data-toggle="tab">Overview</a>
+					</li>
+					<li>
+						<a href="#data" data-toggle="tab">Data</a>
+					</li>
+					<li>
+						<a href="#clinical" data-toggle="tab">Clinical</a>
+					</li>
+					<li>
+						<a href="#followup" data-toggle="tab">Follow Up</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span12 tab-content">
+					<div class="tab-pane active" id="home">
+						<div class="page-header">
+							<h1>Programme Indicators</h1>
+						</div>
+						<div class="row dashnum">
+							<div class="span3 offset1 well well-small">
+								<h3>Enrolled Patients</h3>
+								<div id="enrolledPatients"></div>
+								<div id="enrolledPatientsPercent"></div>
+								<p class="small muted">Total patients enrolled</p>
+							</div>
+							<div class="span3 well well-small">
+								<h3>On ART</h3>
+								<div id="onArt"></div>
+								<div id="onArtPercent"></div>
+								<p class="small muted">Patients receiving ART</p>
+							</div>
+							<div class="span3 well well-small">
+								<h3>Eligible Not On ART</h3>
+								<div id="eligibleNotOnArt"></div>
+								<div id="eligibleNotOnArtPercent"></div>
+								<p class="small muted">Patients eligible but not receiving ART</p>
+							</div>
+						</div>
+						<div class="row dashnum">
+							<div class="span3 offset1 well well-small">
+								<h3>Lost To Follow Up</h3>
+								<div id="lostToFollowup"></div>
+								<div id="lostToFollowupPercent"></div>
+								<p class="small muted">Patients who are lost to follow up</p>
+							</div>
+							<div class="span3 well well-small">
+								<h3>Followed Up</h3>
+								<div id="lostPatientsFollowedUp"></div>
+								<p class="small muted">Patients who have been contacted or traced having been previously lost to follow up</p>
+							</div>
+							<div class="span3 well well-small">
+								<h3>Complete Records</h3>
+								<div id="completedRecords"></div>
+								<div id="completedRecordsPercent"></div>
+								<p class="small muted">Records with all four core parameters</p>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="overview">
+						<div class="row">
+							<div class="span12">
+								<h2 class="chart-header">Enrolled patients over time</h2>
+								<div id="overview_timeline_chart" class="overview_timeline_chart chart">
+									<svg></svg>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<div class="span6">
+								<h2 class="chart-header">Patient source</h2>
+									<svg id="overview_patient_source_chart" class="pie_chart chart"></svg>
+							</div>
+							<div class="span6">
+								<h2 class="chart-header">Age &amp; gender</h2>
+									<svg id="overview_age_gender_chart" class="pie_chart chart"></svg>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="data">
+						<div class="row">
+							<div class="span12">
+								<h2 class="chart-header">Missing data over time</h2>
+								<div id="data_missing_chart" class="data_missing_chart chart">
+									<svg></svg>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<div class="span12">
+								<h2 class="chart-header">Percentage change in missing core parameters</h2>
+								<div id="data_missing_parameters_chart" class="data_missing_chart chart">
+									<svg></svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="clinical">
+						<div class="row">
+							<div class="span12">
+								<h2 class="chart-header">Patients on ART over time</h2>
+								<div id="clinical_on_art_by_who_stage_timeline_chart" class="data_missing_chart chart">
+									<svg></svg>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<div class="span12">
+								<h2 class="chart-header">Eligible patients not receiving ART over time</h2>
+								<div id="clinical_eligible_not_on_art_timeline_chart" class="data_missing_chart chart">
+									<svg></svg>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<div class="span6">
+								<h2 class="chart-header">Initial WHO stage</h2>
+									<svg id="clinical_initial_who_multibar_chart" class="bar-chart chart"></svg>
+							</div>
+							<div class="span6">
+								<h2 class="chart-header">Initial CD4 count</h2>
+									<svg id="clinical_initial_cd4_multibar_chart" class="bar-chart chart"></svg>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="followup">
+						<div class="row">
+							<div class="span12">
+								<h2 class="chart-header">Patients exited care over time</h2>
+								<div id="followup_exit_timeline_chart" class="data_missing_chart chart">
+									<svg></svg>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<div class="span12">
+								<h2 class="chart-header">Patiets lost to follow up willing to return over time</h2>
+								<div id="followup_return_timeline_chart" class="data_missing_chart chart">
+									<svg></svg>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<div class="span6">
+								<h2 class="chart-header">Patients followed up</h2>
+									<svg id="followup_age_gender_chart" class="pie-chart chart"></svg>
+							</div>
+							<div class="span6">
+								<h2 class="chart-header">Reasons lost to follow up</h2>
+									<svg id="followup_reason_lost_chart" class="pie-chart chart"></svg>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>

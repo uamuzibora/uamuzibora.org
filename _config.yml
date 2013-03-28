@@ -1,0 +1,25 @@
+baseurl:     /beta/
+url:         https://uamuzibora.org
+name:        Uamuzi Bora
+description: We are a UK-registered medical charity helping to prevent and control HIV in Western Kenya.
+
+
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+includes:    ./_includes
+permalink:   /blog/archives/:year/:title
+
+future:      true
+lsi:         false
+pygments:    false
+markdown:    maruku
+
+maruku:
+  use_tex:    false
+  use_divs:   false
+  png_engine: blahtex
+  png_dir:    images/latex
+  png_url:    /images/latex
+
+# 

@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<section class="container no-carousel">
+	{{content}}
+
+	{% if page.extra == 'dashboard' %}
+	{% include footer_chart.html %}
+	{% else %}
+	{% include footer.html %}
+	{% endif %}
+</section><!-- /.container -->
