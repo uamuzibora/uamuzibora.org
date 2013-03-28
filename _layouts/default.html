@@ -13,9 +13,12 @@
 		<meta name="author" content="{{ site.name }}">
 
 		<!-- Le styles -->
-		<link href="/assets/css/bootstrap.css" rel="stylesheet">
-		<link href="/assets/css/bootstrap-responsive.css" rel="stylesheet">
-		<link href="/assets/css/custom.css" rel="stylesheet">
+		<link href="{{ site.url }}/assets/css/bootstrap.css" rel="stylesheet">
+		<link href="{{ site.url }}/assets/css/bootstrap-responsive.css" rel="stylesheet">
+		{% if page.extra == 'dashboard' %}
+		<link href="{{ site.url }}/assets/css/nv.d3.css" rel="stylesheet">
+		{% endif %}
+		<link href="{{ site.url }}/assets/css/custom.css" rel="stylesheet">
 
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
@@ -23,11 +26,11 @@
 		<![endif]-->
 
 		<!-- Fav and touch icons -->
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-		<link rel="shortcut icon" href="assets/ico/favicon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/assets/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.url }}/assets/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.url }}/assets/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="{{ site.url }}/assets/ico/apple-touch-icon-57-precomposed.png">
+		<link rel="shortcut icon" href="{{ site.url }}/assets/ico/favicon.png">
 	</head>
 
 	<body>
@@ -62,10 +65,17 @@
 
 		<!-- Le javascript -->
 		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
-		<script src="/assets/js/jquery.min.js"></script>
-		<script src="/assets/js/bootstrap.min.js"></script>
-		<script src="/assets/js/holder.js"></script>
-		<script src="/assets/js/app.js"></script>
-		{{ include tracking.html }}
+		<script src="{{ site.url }}/assets/js/jquery.min.js"></script>
+		<script src="{{ site.url }}/assets/js/bootstrap.min.js"></script>
+		<script src="{{ site.url }}/assets/js/holder.js"></script>
+		<script src="{{ site.url }}/assets/js/app.js"></script>
+		{% if page.extra == 'dashboard' %}
+		<script src="{{ site.url }}/assets/js/dashboard/d3.v2.min.js"></script>
+		<script src="{{ site.url }}/assets/js/dashboard/nv.d3.min.js"></script>
+		<script src="{{ site.url }}/assets/js/dashboard/data_dynamic.js"></script>
+		<script src="{{ site.url }}/assets/js/dashboard/ub_chart.js"></script>
+		<script src="{{ site.url }}/assets/js/dashboard/dashboard-hiv.js"></script>
+		{% endif %}
+		{% include tracking.html %}
 	</body>
 </html>

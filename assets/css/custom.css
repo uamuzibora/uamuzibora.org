@@ -380,3 +380,36 @@ body {
   }
 
 }
+
+/* Big numbers overview
+-------------------------------------------------- */
+.dashnum {
+  text-align: center;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+/* Chart stuff
+-------------------------------------------------- */
+
+.chart-header {
+  text-align: center;
+}
+
+.chart text {
+  font-family: inherit;
+  text-transform: uppercase;
+}
+
+.overview_timeline_chart, .data_missing_chart svg {
+  height: 400px;
+}
+
+.pie_chart {
+  min-width: 400px;
+  min-height: 400px;
+}
+
+.bar-chart {
+  height: 300px;
+}
