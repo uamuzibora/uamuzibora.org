@@ -75,7 +75,7 @@ function load_numbers(){
     missing_data={}
     for(time in jdata){
 	d=new Date(time)
-	missing_data[d.getTime()]={"Hiv Screening":jdata[time]["missing_hiv"],"TB Screening":jdata[time]["missing_tb"],"Malaria Screening":jdata[time]["missing_malaria"],"Hypertension":jdata[time]["missing_hypertension"]}
+	missing_data[d.getTime()]={"Hiv Screening":jdata[time]["missing_hiv"],"TB Screening":jdata[time]["missing_tb"],"Malaria Screening":jdata[time]["missing_malaria"],"High BP screening":jdata[time]["missing_hypertension"]}
     }
     missing_data_scaled = scale(missing_data,mothers,100,2)
     missing_fractional_change = fractional_change(missing_data_scaled,1,"individual");
@@ -84,7 +84,7 @@ function load_numbers(){
     positive={}
     for(time in jdata){
 	d=new Date(time)
-	positive[d.getTime()]={"TB Positive":jdata[time]["tb_positive"],"Malaria Positive":jdata[time]["malaria_positive"],"VDRL Positive":jdata[time]["vdrl_positive"]}
+	positive[d.getTime()]={"Tuberculosis":jdata[time]["tb_positive"],"Malaria":jdata[time]["malaria_positive"],"Syphillis":jdata[time]["vdrl_positive"]}
     }
 
     positive_scaled = scale(positive,mothers,100,2)
@@ -93,7 +93,7 @@ function load_numbers(){
     preventive={}
     for(time in jdata){
 	d=new Date(time)
-	preventive[d.getTime()]={"TT1-5":jdata[time]["TT1-5"],"IPT1-3":jdata[time]["IPT1-3"],"Iron and Folate":jdata[time]["iron_folate"],"deworming":jdata[time]["deworming"],"ITN":jdata[time]["ITN"]}
+	preventive[d.getTime()]={"Tetanus vaccine (TT1-5)":jdata[time]["TT1-5"],"Malaria prophylaxis (IPT1-3)":jdata[time]["IPT1-3"],"Iron & Folate":jdata[time]["iron_folate"],"Deworming":jdata[time]["deworming"],"Mosquito net":jdata[time]["ITN"]}
     }
     preventive_scaled = scale(preventive,mothers,100,2)
 
@@ -101,7 +101,7 @@ function load_numbers(){
     delivery_indicators={}
     for(time in jdata){
 	d=new Date(time)
-	delivery_indicators[d.getTime()]={"HIV+ on ART":jdata[time]["receiving_haart_postnatal"],"Vitamin A":jdata[time]["mother_vit_a"],"Child Immunisation":jdata[time]["child_immunisation"]}
+	delivery_indicators[d.getTime()]={"ART":jdata[time]["receiving_haart_postnatal"],"Vitamin A":jdata[time]["mother_vit_a"],"Child Immunisation":jdata[time]["child_immunisation"]}
     }
 
     delivery_indicators_scaled = scale(delivery_indicators,mothers,100,2)
@@ -139,8 +139,10 @@ function load_numbers(){
 	pie_chart(jdata[latest_date]["delivery_conducted_by"],"delivery_conducted_by_chart")
 	bar_chart(child_art_age,"delivery_child_art_chart");
     });
-}
 
+    // Last updated
+    $('#lastDate').html(pretty_date(latest_date_d));
+}
 
 function timeData(data,key,group){
     var keys = Object.keys(data);

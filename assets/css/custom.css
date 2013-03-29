@@ -99,7 +99,7 @@ body {
 }
 
 .no-photo-spacer {
-  padding-top: 60px;
+  padding-top: 70px;
 }
 
 
@@ -424,8 +424,9 @@ body {
 }
 
 .bar-chart {
-  height: 300px;
+  height: 400px;
 }
+
 
 /* Change height/width on small displays */
 @media (max-width: 767px) {

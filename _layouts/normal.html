@@ -1,8 +1,10 @@
 ---
 layout: default
 ---
-<div class="photo-spacer hidden-phone"></div>
+{% if page.extra == 'dashboard' %}<div class="no-photo-spacer"></div>{% else %}
+<div class="photo-spacer spacer-background-{{page.section}} hidden-phone"></div>
 <div class="no-photo-spacer visible-phone"></div>
+{% endif %}
 <section class="container no-carousel">
 	{{content}}
 	{% if page.section == 'Data' %}<div class="span10 offset1">{% else %}<div class="span8 offset2">{% endif %}

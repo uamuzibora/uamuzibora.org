@@ -73,9 +73,15 @@
 		{% if page.extra == 'dashboard' %}
 		<script src="{{ site.url }}{{ site.baseurl }}assets/js/dashboard/d3.v2.min.js"></script>
 		<script src="{{ site.url }}{{ site.baseurl }}assets/js/dashboard/nv.d3.min.js"></script>
-		<script src="{{ site.url }}{{ site.baseurl }}assets/js/dashboard/data_dynamic.js"></script>
 		<script src="{{ site.url }}{{ site.baseurl }}assets/js/dashboard/ub_chart.js"></script>
+		{% if page.title == 'HIV Dashboard' %}
+		<script src="{{ site.url }}{{ site.baseurl }}assets/js/dashboard/data_hiv.js"></script>
 		<script src="{{ site.url }}{{ site.baseurl }}assets/js/dashboard/dashboard-hiv.js"></script>
+		{% endif %}
+		{% if page.title == 'MCH Dashboard' %}
+		<script src="{{ site.url }}{{ site.baseurl }}assets/js/dashboard/data_mch.js"></script>
+		<script src="{{ site.url }}{{ site.baseurl }}assets/js/dashboard/dashboard-mch.js"></script>
+		{% endif %}
 		{% endif %}
 		{% include tracking.html %}
 	</body>

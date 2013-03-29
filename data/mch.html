@@ -1,0 +1,185 @@
+---
+layout: normal
+title: MCH Dashboard
+extra: dashboard
+section: Data
+---
+		<div class="row">
+			<div class="span10 offset1">
+				<ul class="nav nav-tabs" id="tablist">
+					<li class="active">
+						<a href="#home" data-toggle="tab">Home</a>
+					</li>
+					<li>
+						<a href="#overview" data-toggle="tab">Overview</a>
+					</li>
+					<li>
+						<a href="#data" data-toggle="tab">Data</a>
+					</li>
+					<li>
+						<a href="#anc" data-toggle="tab">ANC</a>
+					</li>
+					<li>
+						<a href="#delivery" data-toggle="tab">Delivery</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span12 tab-content">
+					<div class="tab-pane active" id="home">
+						<div class="row">
+							<div class="page-header span9 offset1">
+								<h1>MCH Programme Indicators <small>updated on <span id="lastDate"></span></small></h1>
+								<p class="lead">We use the following indicators to measure the impact of <a href="/projects/mch">our Maternal &amp; Child Health project</a> in Western Kenya.</p>
+								<div class="label label-warning"><p><strong>Heads up!</strong> This is displaying demo data until we have launched our MCH project.</p></div>
+							</div>
+						</div>
+						<div class="row dashnum">
+							<div class="span3 offset1 well well-small">
+								<h3>Women Enrolled</h3>
+								<div id="enrolledWomen"></div>
+								<div id="enrolledWomenThreeVisits"></div>
+								<p class="small muted">Total pregnant women <a href="#enrolledWomen" data-toggle="tooltip" data-placement="bottom" title="'Enrollment' is the process of entering a pregnant woman's maternal record into our electronic medical record">enrolled</a></p>
+							</div>
+							<div class="span3 well well-small">
+								<h3>Deliveries Registered</h3>
+								<div id="deliveriesRecorded"></div>
+								<div id="deliveriesPercent"></div>
+								<p class="small muted">Total deliveries registered</p>
+							</div>
+							<div class="span3 well well-small">
+								<h3>Children Enrolled</h3>
+								<div id="enrolledChildren"></div>
+								<div id="childrenPercentDeliveries"></div>
+								<p class="small muted">Total children born to enrolled mothers</p>
+							</div>
+						</div>
+						<div class="row dashnum">
+							<div class="span3 offset1 well well-small">
+								<h3>Women on ART</h3>
+								<div id="positiveOnArt"></div>
+								<div id="percentageOnArtOfPositive"></div>
+								<p class="small muted">HIV+ pregnant women <a href="#positiveOnArt" data-toggle="tooltip" data-placement="bottom" title="HIV+ pregnant women who have been prescribed and provided with antiretroviral treatment">receiving ART</a></p>
+							</div>
+							<div class="span3 well well-small">
+								<h3>Malaria Prophylaxis</h3>
+								<div id="ipt13Completed"></div>
+								<div id="ipt13Percent"></div>
+								<p class="small muted">Pregnant women <a href="#ipt13Completed" data-toggle="tooltip" data-placement="bottom" title="Pregnant women who have completed 3 courses of Intermittant Preventive Treatment (IPT) for malaria">completed IPT1-3</a></p>
+							</div>
+							<div class="span3 well well-small">
+								<h3>Complete Records</h3>
+								<div id="completedRecords"></div>
+								<div id="completedRecordsPercent"><h2 class="dashnum">(0%)</h2></div>
+								<p class="small muted">Records without <a href="#completedRecords" data-toggle="tooltip" data-placement="bottom" title="Screening for HIV, TB, malaria and history of high blood pressure are required for a complete record">missing data</a></p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="span10 offset1">
+								<p class="small mute"><span class="label label-info">Info</span> The displayed percentages are the proportional change of the indicator since 2nd April 2013.</p>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="overview">
+						<div class="row">
+							<div class="span12">
+								<h2 class="chart-header">Pregnant women enrolled</h2>
+								<div id="overview_timeline_chart" class="overview_timeline_chart chart">
+									<svg></svg>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<div class="span12">
+								<h2 class="chart-header">Children born to enrolled mothers</h2>
+								<div id="overview_children_timeline_chart" class="overview_timeline_chart chart">
+									<svg></svg>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<div class="span6">
+								<h2 class="chart-header">HIV+ pregnant women</h2>
+									<svg id="overview_hiv_age" class="pie_chart chart"></svg>
+							</div>
+							<div class="span6">
+								<h2 class="chart-header">Mosquito nets distributed</h2>
+									<svg id="overview_itn_age" class="pie_chart chart"></svg>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="data">
+						<div class="row">
+							<div class="span12">
+								<h2 class="chart-header">Missing data</h2>
+								<div id="data_missing_chart" class="data_missing_chart chart">
+									<svg></svg>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<div class="span12">
+								<h2 class="chart-header">Percentage change in missing data</h2>
+								<div id="data_missing_parameters_chart" class="data_missing_chart chart">
+									<svg></svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="anc">
+						<div class="row">
+							<div class="span12">
+								<h2 class="chart-header">Pregnant women disease positive</h2>
+								<div id="anc_positive_screening_timeline_chart" class="data_missing_chart chart">
+									<svg></svg>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<div class="span12">
+								<h2 class="chart-header">Preventive services provided</h2>
+								<div id="anc_preventive_timeline_chart" class="data_missing_chart chart">
+									<svg></svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="delivery">
+						<div class="row">
+							<div class="span12">
+								<h2 class="chart-header">Preventive services provided at delivery</h2>
+								<div id="delivery_timeline_chart" class="data_missing_chart chart">
+									<svg></svg>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<div class="span6">
+								<h2 class="chart-header">Place of delivery</h2>
+									<svg id="delivery_place_chart" class="pie-chart chart"></svg>
+							</div>
+							<div class="span6">
+								<h2 class="chart-header">Method of delivery</h2>
+									<svg id="delivery_method_chart" class="pie-chart chart"></svg>
+							</div>
+						</div>
+						<div class="row">
+							<div class="span6">
+								<h2 class="chart-header">Present at delivery</h2>
+									<svg id="delivery_conducted_by_chart" class="pie-chart chart"></svg>
+							</div>
+							<div class="span6">
+								<h2 class="chart-header">Children receiving ART</h2>
+									<svg id="delivery_child_art_chart" class="bar-chart chart"></svg>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	
