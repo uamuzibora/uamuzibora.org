@@ -1,7 +1,11 @@
 ---
 layout: default
 ---
+<div class="photo-spacer hidden-phone"></div>
+<div class="no-photo-spacer visible-phone"></div>
 <section class="container no-carousel">
 	{{content}}
-	{% include footer.html %}
+	{% if page.section == 'Data' %}<div class="span10 offset1">{% else %}<div class="span8 offset2">{% endif %}
+		{% include footer.html %}
+	</div>
 </section><!-- /.container -->
