@@ -536,3 +536,33 @@ function pretty_date(date) {
     var ordinal = ordinal_array[date.getDate()];
     return day + ordinal + ' ' + month + ' ' + year;
 }
+function bar_chart(data,chart_id){
+    var tmp=[]
+    for (value in data){
+	tmp.push({"x":value,"y":data[value]})
+    }
+    datum=[{"key":"","values":tmp}]
+
+    nv.addGraph(function() {
+	var chart = nv.models.multiBarChart()
+	    .x(function(d) { return d.x })
+	    .y(function(d) { return d.y })
+	    .stacked(true)
+	    .showControls(false)
+	    .showLegend(false)
+//	chart.xAxis
+  //          .tickFormat(d3.format(',f'));
+	
+	chart.yAxis
+	    .tickFormat(d3.format('p'))
+	    .showMaxMin(false);
+	
+	d3.select('#'+chart_id)
+            .datum(datum)
+	    .transition().duration(500).call(chart);
+	
+	nv.utils.windowResize(chart.update);
+	
+    return chart;
+    });
+}
