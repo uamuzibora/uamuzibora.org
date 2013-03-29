@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Research
-header: Operational Research
+header: Operational research
 section: Projects
 order: 5
 ---
@@ -11,7 +11,7 @@ order: 5
 Our current operational research plan is to implement an electronic medical record (EMR) within the national health system, act as a pilot and provide proof of concept for national EMR implementation and scale-up, and work in partnership with Ministry of Health and other national institutions.
 
 ### Overall Aim
-    To determine whether our projects can strengthen pathways of care and improve health outcomes for people living with HIV in Western Kenya
+> To determine whether our projects can strengthen pathways of care and improve health outcomes for people living with HIV in Western Kenya
 
 ### Specific Objectives
 To compare the following indicators in clinics using the electronic medical record (EMR) and those that do not:

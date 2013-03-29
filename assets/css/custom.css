@@ -91,7 +91,8 @@ body {
 
 .photo-spacer {
   padding-top: 200px;
-  background: url(../img/slides/slide-1.jpg) top center no-repeat fixed;
+  background: url(../img/banner-1.jpg) center center no-repeat fixed;
+  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -236,7 +237,7 @@ body {
     height: 500px;
 }
 .slide-3 {
-    background: url(../img/slides/slide-3.jpg) no-repeat center center;
+    background: url(../img/slides/slide-6.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

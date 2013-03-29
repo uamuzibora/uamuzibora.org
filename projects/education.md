@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Education
-header: Education & Training
+header: Education & training
 section: Projects
 order: 4
 ---

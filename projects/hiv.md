@@ -1,7 +1,7 @@
 ---
 layout: page
 title: HIV
-header: HIV
+header: HIV electronic medical record
 section: Projects
 order: 2
 ---
