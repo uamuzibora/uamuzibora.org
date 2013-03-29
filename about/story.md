@@ -3,6 +3,7 @@ layout: page
 title: Story
 header: Our story
 section: About
+order: 2
 ---
 
 <p class="lead">Uamuzi Bora was founded in 2009...</p>

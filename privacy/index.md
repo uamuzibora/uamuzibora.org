@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-nomenu
 title: Privacy
 header: Privacy & Terms
 ---

@@ -3,6 +3,7 @@ layout: page
 title: About
 header: Welcome to Uamuzi Bora!
 section: About
+order: 1
 ---
 
 <p class="lead">We are a medical project working to improve primary health care in Western Kenya.</p>

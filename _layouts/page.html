@@ -2,10 +2,30 @@
 layout: normal
 ---
 <div class="row">
-	<div class="span10 offset1">
-		<div class="page-header">
-			<h1>{{ page.header }}</h1>
+	<div class="span8 offset2">
+		<header class="row">
+			<div class="span6 offset2">
+					<h1 class="page-header">{{ page.header }}</h1>
+			</div>
+		</header>
+
+		<div class="row">
+			<aside class="span2 hidden-phone">
+					<ul class="nav nav-pills nav-stacked">
+						{% include sidenav.html %}
+					</ul>
+			</aside>
+			<div class="span6">
+				{{content}}
+			</div>
 		</div>
-		{{content}}
+		<div class="row visible-phone">
+			<aside class="span2">
+				<h3>Read more</h3>
+					<ul class="nav nav-pills nav-stacked">
+						{% include sidenav.html %}
+					</ul>
+			</aside>
+		</div>
 	</div>
 </div>

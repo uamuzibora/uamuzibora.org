@@ -3,6 +3,7 @@ layout: page
 title: Research
 header: Operational Research
 section: Projects
+order: 5
 ---
 
 <p class="lead">Our work follows best practice and evidence-based guidelines written by national and international bodies, including the national Ministry of Health and World Health Organisation.</p>

@@ -86,7 +86,20 @@ body {
 }
 
 .no-carousel {
-  margin-top: 100px;
+  margin-top: 20px;
+}
+
+.photo-spacer {
+  padding-top: 200px;
+  background: url(../img/slides/slide-1.jpg) top center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.no-photo-spacer {
+  padding-top: 60px;
 }
 
 

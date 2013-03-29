@@ -3,6 +3,7 @@ layout: page
 title: Education
 header: Education & Training
 section: Projects
+order: 4
 ---
 
 Hello world!

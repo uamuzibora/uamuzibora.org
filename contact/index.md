@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: page-nomenu
 title: Contact
-header: Contact
+header: Contact us
 ---
 
 Hello world!

@@ -3,6 +3,7 @@ layout: page
 title: HIV
 header: HIV
 section: Projects
+order: 2
 ---
 
 Despite significant scaling up of HIV services and access to treatment in Kenya, targets for achieving universal access to HIV prevention, treatment, care and support by 2010 were not achieved. 

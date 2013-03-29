@@ -3,6 +3,7 @@ layout: page
 title: Projects
 header: Our projects
 section: Projects
+order: 1
 ---
 
 <p class="lead">We believe mobile information technology and an electronic medical record can strengthen pathways of care.</p>
