@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Education & Training
+title: Education
+header: Education & Training
+section: Projects
 ---
 
 Hello world!

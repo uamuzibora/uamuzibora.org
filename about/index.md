@@ -1,13 +1,11 @@
 ---
 layout: page
 title: About
-group: navbar
-weight: 2
+header: Welcome to Uamuzi Bora!
+section: About
 ---
 
-# Welcome to Uamuzi Bora!
-
-## We are Uamuzi Bora, a medical project working to improve primary health care in Western Kenya.
+<p class="lead">We are a medical project working to improve primary health care in Western Kenya.</p>
 
 Uamuzi Bora means _a better choice_ in Luhya, a local language spoken in Western Kenya, where we work, and was chosen by the local communities to describe the work we do.
 

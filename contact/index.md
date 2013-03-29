@@ -1,8 +1,7 @@
 ---
 layout: page
 title: Contact
-group: navbar
-weight: 7
+header: Contact
 ---
 
 Hello world!

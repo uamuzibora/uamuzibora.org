@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Maternal & Child Health
+title: MCH
+header: Maternal & Child Health
+section: Projects
 ---
 
 With the support of [Grand Challenges Canada](http://www.grandchallenges.ca/), the [Ministry of Health, Kenya](www.publichealth.go.ke) and [Japanese International Cooperation Agency (JICA)](http://www.jica.org) we have developed a maternal and child health (MCH) [electronic medical record (EMR)](/projects/mch/demo), based on [OpenMRS](http://www.openmrs.org), to improve care and support for pregnant women during antenatal care, delivery and postnatal care in Western Kenya. 

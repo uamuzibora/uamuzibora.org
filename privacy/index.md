@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Privacy & Terms
+title: Privacy
+header: Privacy & Terms
 ---
 
 Your privacy is critically important to us.

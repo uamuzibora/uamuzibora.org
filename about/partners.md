@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Funding
+title: Partners
+header: Partners & Funding
+section: About
 ---
 
 # Partners and Funding
