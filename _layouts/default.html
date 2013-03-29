@@ -45,10 +45,15 @@
 							<!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
 						<div class="nav-collapse collapse">
 							<ul class="nav">
-								{% if page.section == "About" %}<li class="active">{% else %}<li>{% endif %}<a href="/about">About</a></li>
-								{% if page.section == "News" %}<li class="active">{% else %}<li>{% endif %}<a href="/blog">News</a></li>
-								{% if page.section == "Projects" %}<li class="active">{% else %}<li>{% endif %}<a href="/projects">Projects</a></li>
-								{% if page.section == "Data" %}<li class="active">{% else %}<li>{% endif %}<a href="/data">Data</a></li>
+								{% if page.section == "About" %}<li class="active">{% else %}<li>{% endif %}<a href="{{ site.url }}{{ site.baseurl }}about">About</a></li>
+								{% if page.section == "News" %}<li class="active">{% else %}<li>{% endif %}<a href="{{ site.url }}{{ site.baseurl }}blog">News</a></li>
+								{% if page.section == "Projects" %}<li class="active">{% else %}<li>{% endif %}<a href="{{ site.url }}{{ site.baseurl }}projects">Projects</a></li>
+								{% if page.section == "Data" %}<li class="active dropdown">{% else %}<li class="dropdown">{% endif %}<a href="#" class="dropdown-toggle" data-toggle="dropdown">Data <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="{{ site.url }}{{ site.baseurl }}data/hiv">HIV Dashboard</a></li>
+										<li><a href="{{ site.url }}{{ site.baseurl }}data/mch">MCH Dashboard</a></li>
+									</ul>
+								</li>
 								<li><a href="https://github.com/uamuzibora">Code</a></li>
 							</ul>
 						</div><!--/.nav-collapse -->
