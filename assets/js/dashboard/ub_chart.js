@@ -55,6 +55,13 @@ function scale(data,scaling,scale,level){
 		return_data[key][key2] = data[key][key2] / scaling[key] * scale
 	    }
 	}
+	if(level == 3){
+	    return_data[key] = {}
+	    for (key2 in data[key]){
+		return_data[key][key2] = data[key][key2] / scaling[key][key2] * scale
+	    }
+	}
+
 
     }
     return return_data
@@ -191,6 +198,7 @@ function total_time_data(data,level){
 
 function line_chart(data,chart_id,scaling,xAxisLabel,yAxisLabel){
     var timedata_t = {}
+    alert(JSON.stringify(data));
     keys = Object.keys(data)
     locations = Object.keys(data[keys[keys.length - 1]]);
     max = 0;
@@ -220,6 +228,7 @@ function line_chart(data,chart_id,scaling,xAxisLabel,yAxisLabel){
     for (loc in timedata_t){
 	timedata.push({"key":loc,"values":timedata_t[loc]})
     }
+    alert(JSON.stringify(timedata))
     nv.addGraph(function() {
 	var chart_line = nv.models.lineChart()
 	    .x(function(d) { return d[0] })

@@ -39,19 +39,19 @@ section: Data
 							<div class="span3 offset1 well well-small">
 								<h3>Women Enrolled</h3>
 								<div id="enrolledWomen"><img src="{{site.url}}{{site.baseurl}}assets/img/loading-icon.gif"></div>
-								<div id="enrolledWomenThreeVisits"></div>
+								<div id="womenEnrolledPercent"></div>
 								<p class="small muted">Total pregnant women <a href="#enrolledWomen" data-toggle="tooltip" data-placement="bottom" title="'Enrollment' is the process of entering a pregnant woman's maternal record into our electronic medical record">enrolled</a></p>
 							</div>
 							<div class="span3 well well-small">
 								<h3>Deliveries Registered</h3>
 								<div id="deliveriesRecorded"><img src="{{site.url}}{{site.baseurl}}assets/img/loading-icon.gif"></div>
-								<div id="deliveriesPercent"></div>
+								<div id="deliveryPercent"></div>
 								<p class="small muted">Total deliveries registered</p>
 							</div>
 							<div class="span3 well well-small">
 								<h3>Children Enrolled</h3>
 								<div id="enrolledChildren"><img src="{{site.url}}{{site.baseurl}}assets/img/loading-icon.gif"></div>
-								<div id="childrenPercentDeliveries"></div>
+								<div id="childrenPercent"></div>
 								<p class="small muted">Total children born to enrolled mothers</p>
 							</div>
 						</div>
@@ -59,7 +59,7 @@ section: Data
 							<div class="span3 offset1 well well-small">
 								<h3>Women on ART</h3>
 								<div id="positiveOnArt"><img src="{{site.url}}{{site.baseurl}}assets/img/loading-icon.gif"></div>
-								<div id="percentageOnArtOfPositive"></div>
+								<div id="haartPercent"></div>
 								<p class="small muted">HIV+ pregnant women <a href="#positiveOnArt" data-toggle="tooltip" data-placement="bottom" title="HIV+ pregnant women who have been prescribed and provided with antiretroviral treatment">receiving ART</a></p>
 							</div>
 							<div class="span3 well well-small">
@@ -71,7 +71,7 @@ section: Data
 							<div class="span3 well well-small">
 								<h3>Complete Records</h3>
 								<div id="completedRecords"><img src="{{site.url}}{{site.baseurl}}assets/img/loading-icon.gif"></div>
-								<div id="completedRecordsPercent"><h2 class="dashnum">(0%)</h2></div>
+								<div id="completedRecordsPercent"></div>
 								<p class="small muted">Records without <a href="#completedRecords" data-toggle="tooltip" data-placement="bottom" title="Screening for HIV, TB, malaria and history of high blood pressure are required for a complete record">missing data</a></p>
 							</div>
 						</div>
@@ -146,6 +146,14 @@ section: Data
 								<div id="anc_preventive_timeline_chart" class="data_missing_chart chart">
 									<svg></svg>
 								</div>
+							</div>
+						</div>
+						<div class="row">
+						  <div class="span12">
+								<h2 class="chart-header">Antenatal care visits during pregnancy</h2>
+									<svg id="anc_number_of_visits" class="pie-chart chart"></svg>
+							</div>
+							<div class="span6">
 							</div>
 						</div>
 					</div>
