@@ -92,7 +92,6 @@ body {
 .photo-spacer {
   padding-top: 200px;
   background: url(../img/banner-1.jpg) center center no-repeat fixed;
-  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
