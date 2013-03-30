@@ -91,19 +91,19 @@ title: Home
 			<h2>About us</h2>
 			<p>We are a UK-registered charity who use mobile information technology and an electronic medical record to improve public health and primary care in Western Kenya.</p>
 			<p><strong>Uamuzi Bora</strong> means “a better choice” in Luhya, a local language spoken in Western Kenya, and was chosen by the local communities to describe the work we do.</p>
-          <p><a class="btn" href="{{ site.url }}{{ site.baseurl }}about">Read more &raquo;</a></p>
+          <p><a class="btn" href="{{ site.url }}{{ site.baseurl }}about">Read our story &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
           <h2>Projects</h2>
           <p>We support the Ministry of Health and partners in Kenya to implement an electronic medical record to improve linkage to care, clinical decision support, adherence to treatment and retention in care.</p>
           <p>We currently implement an electronic medical record for HIV and Maternal and Child Health in Western Kenya with the Ministry of Health.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <p><a class="btn" href="{{site.url}}{{site.baseurl}}projects">Find out more &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
           <h2>Latest updates</h2>
-          <p>We use an adapted version of <a href="http://openmrs.org">OpenMRS</a> as the main component of our EMR which we have extended with custom Python applications to verify our data set and produce anonymised aggregate data for use by the Ministry of Health.
-          <p>We're keen to share the epidemiological data we produce and our source code.</p>
-          <p><a class="btn" href="#">Find out more &raquo;</a></p>
+          <p>Read about the latest developments with the project:</p>
+          {% include updates.html %}
+          <p><a class="btn" href="{{site.url}}{{site.baseurl}}blog">Read our blog &raquo;</a></p>
         </div><!-- /.span4 -->
       </div><!-- /.row -->
 
