@@ -6,11 +6,5 @@ section: Projects
 order: 4
 ---
 
-Hello world!
-
-## This is a subheader
-
-### This is a smaller subheader
-
-Do you see any [Teletubbies](/data) in here? Do **you see** a _slender_ plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.
+<p class="lead">We support education and training of Ministry of Health staff and partners at all levels of the health system</p>
 

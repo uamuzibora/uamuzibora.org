@@ -6,14 +6,14 @@ section: Projects
 order: 1
 ---
 
-<p class="lead">We believe mobile information technology and an electronic medical record can strengthen pathways of care.</p>
+<p class="lead">We support the <a href="http://www.publichealth.go.ke">Ministry of Health</a> and partners in Kenya to implement mobile information technology and an electronic medical record for <a href="/projects/hiv">HIV</a> and <a href="/projects/mch">Maternal and Child Health</a>.</p>
 
-We support the [Ministry of Health](http://www.publichealth.go.ke) and partners in Kenya to implement an electronic medical record to improve linkage to care, clinical decision support, adherence to treatment and retention in care. We currently implement an electronic medical record for [HIV](/projects/hiv) and [Maternal and Child Health](/projects/mch) in Western Kenya that supports four key functions:
+Our EMR supports four key functions:
 
- 1. **Data verification** - To improve the completeness and accuracy of the electronic medical record by running automated background checks on the database and by enabling records clerks at health clinics to identify and update incomplete patient records.
+ 1. **Data verification** - to improve the completeness and accuracy of the patient record by running automated database queries and by enabling health records clerks to identify and update incomplete records.
 
- 2. **Clinical reminders** - To support clinicians during outpatient consultations and improve the provision of standardised care, by providing clinical reminders within the electronic medical record.
+ 2. **Clinical reminders** - to support clinicians during consultations through the use of clinical decision support.
 
- 3. **Program of follow up** - To identify patients who have defaulted from care and ensure they are contacted, either by SMS reminder or by phone call, to ensure they return to clinic and are retained in care.
+ 3. **Follow up** - to identify patients who have exited care and ensure they are contacted, either by SMS reminder or by phone call, to support return to clinic and retention in care.
 
- 4. **Reporting** - To create standard reports for the Ministry of Health that can be accessed at local, district, provincial and national levels to improve the quality, completeness and timeliness and reporting.
+ 4. **Reporting** - to create standardised reports for the Ministry of Health that can be accessed at clinic, district, provincial and national levels to improve the quality, completeness and timeliness of reporting.
