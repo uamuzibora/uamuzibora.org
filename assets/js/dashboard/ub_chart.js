@@ -198,7 +198,6 @@ function total_time_data(data,level){
 
 function line_chart(data,chart_id,scaling,xAxisLabel,yAxisLabel){
     var timedata_t = {}
-    alert(JSON.stringify(data));
     keys = Object.keys(data)
     locations = Object.keys(data[keys[keys.length - 1]]);
     max = 0;
@@ -221,14 +220,13 @@ function line_chart(data,chart_id,scaling,xAxisLabel,yAxisLabel){
 	    } else {
 		scale = 1
 	    }
-	    timedata_t[loc].push([parseInt(keys[i]),data[keys[i]][loc] / scale]);
+	    timedata_t[loc].push([parseInt(keys[i]),Math.round(data[keys[i]][loc] / scale*100)/100]);
 	}
     }
     var timedata=[];
     for (loc in timedata_t){
 	timedata.push({"key":loc,"values":timedata_t[loc]})
     }
-    alert(JSON.stringify(timedata))
     nv.addGraph(function() {
 	var chart_line = nv.models.lineChart()
 	    .x(function(d) { return d[0] })

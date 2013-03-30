@@ -1,6 +1,5 @@
 jdata=data();
 load_numbers();
-
 function load_numbers(){
     var keys = Object.keys(jdata);
     keys.sort();
@@ -243,7 +242,7 @@ function load_numbers(){
     $('a[href="#clinical"]').on('show', function () {
 
 	timeline_nv(on_art_who_stage_time,"clinical_on_art_by_who_stage_timeline_chart",'Date','Patients');
-	line_chart(eligible_no_art_percent_time,"clinical_eligible_not_on_art_timeline_chart",1,'Date','Patients');
+	line_chart(eligible_no_art_percent_time,"clinical_eligible_not_on_art_timeline_chart",0,'Date','Patients');
 	multi_bar_chart(first_who_age_gender,"clinical_initial_who_multibar_chart");
 	multi_bar_chart(cd4_age_gender,"clinical_initial_cd4_multibar_chart");
     });
