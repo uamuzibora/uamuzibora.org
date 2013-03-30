@@ -55,6 +55,13 @@ function scale(data,scaling,scale,level){
 		return_data[key][key2] = data[key][key2] / scaling[key] * scale
 	    }
 	}
+	if(level == 3){
+	    return_data[key] = {}
+	    for (key2 in data[key]){
+		return_data[key][key2] = data[key][key2] / scaling[key][key2] * scale
+	    }
+	}
+
 
     }
     return return_data
@@ -213,7 +220,7 @@ function line_chart(data,chart_id,scaling,xAxisLabel,yAxisLabel){
 	    } else {
 		scale = 1
 	    }
-	    timedata_t[loc].push([parseInt(keys[i]),data[keys[i]][loc] / scale]);
+	    timedata_t[loc].push([parseInt(keys[i]),Math.round(data[keys[i]][loc] / scale*100)/100]);
 	}
     }
     var timedata=[];
