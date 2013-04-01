@@ -16,4 +16,4 @@ Our EMR supports four key functions:
 
  3. **Follow up** - to identify patients who have exited care and ensure they are contacted, either by SMS reminder or by phone call, to support return to clinic and retention in care.
 
- 4. **Reporting** - to create standardised reports for the Ministry of Health that can be accessed at clinic, district, provincial and national levels to improve the quality, completeness and timeliness of reporting.
+ 4. **Reporting** - to create standardised reports for the Ministry of Health that can be accessed at clinic, district, provincial and national levels to inform public health and clinical decision making.

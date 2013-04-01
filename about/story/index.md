@@ -10,7 +10,7 @@ order: 2
 
 In 2008, 50,000 people attended a community-based campaign of HIV testing in Western Kenya, linked with the distribution of a preventive care package called [CarePack](http://www.vestergaard-frandsen.com/carepack), and nearly 2,000 people tested positive for HIV. The campaign was funded by [Vestergaard Frandsen](http://www.vestergaard-frandsen.com) and implemented in partnership with the [Ministry of Health in Kenya](http://www.publichealth.go.ke).
 
-> But testing positive for HIV is only the start of a long journey...
+> "Testing positive for HIV is only the start of a long journey"
 
 There was a need to ensure those who tested HIV positive were followed up and referred to care and support services. Back in the UK, we designed an electronic medical record (EMR) that could support follow up and referral of people from testing, to clinic and through the lifelong care and support needed.
 
@@ -18,9 +18,9 @@ In 2009, we implemented the first version of the [EMR](/projects/hiv/demo) in Ka
 
 In 2010, we returned to update the system and enrolled _all_ HIV patients registered at the hospital. We enrolled nearly 8,000 patients and supported the provision of care in the hospital for a further two years.
 
-> And there was more that we could do...
+> "Don’t undertake a project unless it is manifestly important and nearly impossible."
 
-In 2012, we received a grant from [Grand Challenges Canada](http://www.grandchallenges.ca/) to continue to develop the EMR and expand to other clinics. We migrated the EMR to the [OpenMRS platform](http://www.openmrs.org), to ensure all data adhered to national and international standards.
+In 2012, we received a grant from [Grand Challenges Canada](http://www.grandchallenges.ca/) to continue to develop the EMR and expand to other clinics. We migrated the system to [OpenMRS](http://www.openmrs.org) to ensure all data adhered to national and international standards.
 
 In 2013, more than 13,000 HIV patients are registered in the EMR, which is implemented in two hospitals and four health clinics. 
 

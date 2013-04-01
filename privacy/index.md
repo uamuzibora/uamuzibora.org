@@ -2,6 +2,7 @@
 layout: page-nomenu
 title: Privacy
 header: Privacy & Terms
+section: Privacy
 ---
 
 Your privacy is critically important to us.

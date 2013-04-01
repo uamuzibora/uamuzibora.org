@@ -2,6 +2,7 @@
 layout: page-nomenu
 title: Contact
 header: Contact us
+section: Contact
 ---
 
 <p class="lead">We'd love to hear from you. Email is the best way to get in touch.</p>

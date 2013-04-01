@@ -90,12 +90,32 @@ body {
 }
 
 .photo-spacer {
-  padding-top: 200px;
-  background: url(../img/banner-1.jpg) center center no-repeat fixed;
-  -webkit-background-size: cover;
+  height: 200px;
+  /*background: url(../img/banner-1.jpg) top center no-repeat fixed;*/
+  /*-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
+}
+
+.spacer-background-Contact {
+  background: url(../img/banner-contact.jpg) top center no-repeat fixed;
+}
+
+.spacer-background-About {
+  background: url(../img/banner-about.jpg) top center no-repeat fixed;
+}
+
+.spacer-background-Projects {
+  background: url(../img/banner-projects.jpg) top center no-repeat fixed;
+}
+
+.spacer-background-News {
+  background: url(../img/banner-news.jpg) top center no-repeat fixed;
+}
+
+.spacer-background-Privacy {
+  background: url(../img/banner-contact.jpg) top center no-repeat fixed;
 }
 
 .no-photo-spacer {
@@ -242,6 +262,24 @@ body {
 }
 .slide-3 {
     background: url(../img/slides/slide-6.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 500px;
+}
+
+.slide-4 {
+    background: url(../img/slides/slide-4.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 500px;
+}
+
+.slide-5 {
+    background: url(../img/slides/slide-7.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
