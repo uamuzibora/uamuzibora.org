@@ -1,11 +1,35 @@
 ---
 layout: normal
+section: News
+order: 2
 ---
+
 <div class="row">
-	<div class="span10 offset1">
-		<h1>
-			<a href="{{ page.url }}">{{ page.title }}</a>
-		</h1>
-		{{content}}
+	<div class="span8 offset2">
+		<header class="row">
+			<div class="page-header span6 offset2">
+					<h1>{{ page.title }}</h1>
+					<p class="muted">Posted by {{page.author}} at {{page.date}}</p>
+			</div>
+		</header>
+
+		<div class="row">
+			<aside class="span2 hidden-phone">
+					<ul class="nav nav-pills nav-stacked">
+						{% include sidenav.html %}
+					</ul>
+			</aside>
+			<div class="span6">
+				{{content}}
+			</div>
+		</div>
+		<div class="row visible-phone">
+			<aside class="span2">
+				<h3>Read more</h3>
+					<ul class="nav nav-pills nav-stacked">
+						{% include sidenav.html %}
+					</ul>
+			</aside>
+		</div>
 	</div>
 </div>

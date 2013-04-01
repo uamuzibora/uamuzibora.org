@@ -2,15 +2,11 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>
-			{{ site.name }}
-			{% if page.title %}
-				 &middot; {{ page.title }}
-			{% endif %}
-		</title>
+		<title>{{ site.name }} {% if page.title %}&middot; {{ page.title }}{% endif %}</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="{{ site.description }}">
 		<meta name="author" content="{{ site.name }}">
+		<link rel="author" href="{{ site.url }}{{ site.baseurl }}humans.txt">
 
 		<!-- Le styles -->
 		<link href="{{ site.url }}{{ site.baseurl }}assets/css/bootstrap.css" rel="stylesheet">
@@ -49,10 +45,21 @@
 							<!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
 						<div class="nav-collapse collapse">
 							<ul class="nav">
-								{% if page.title == "About" %}<li class="active">{% else %}<li>{% endif %}<a href="/about">About</a></li>
-								{% if page.title == "News" %}<li class="active">{% else %}<li>{% endif %}<a href="/blog">News</a></li>
-								{% if page.title == "Projects" %}<li class="active">{% else %}<li>{% endif %}<a href="/projects">Projects</a></li>
-								{% if page.title == "Data" %}<li class="active">{% else %}<li>{% endif %}<a href="/data">Data</a></li>
+								{% if page.section == "About" %}<li class="active">{% else %}<li>{% endif %}<a href="{{ site.url }}{{ site.baseurl }}about">About</a></li>
+								{% if page.section == "News" %}<li class="active">{% else %}<li>{% endif %}<a href="{{ site.url }}{{ site.baseurl }}blog">News</a></li>
+								{% if page.section == "Projects" %}<li class="active">{% else %}<li>{% endif %}<a href="{{ site.url }}{{ site.baseurl }}projects">Projects</a></li>
+								{% if page.section == "Data" %}<li class="active dropdown">{% else %}<li class="dropdown">{% endif %}<a href="#" class="dropdown-toggle" data-toggle="dropdown">Data <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="{{ site.url }}{{ site.baseurl }}data/hiv">HIV Dashboard</a></li>
+										<li><a href="{{ site.url }}{{ site.baseurl }}data/mch">MCH Dashboard</a></li>
+									</ul>
+								</li>
+								<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Demo <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="{{ site.url }}{{ site.baseurl }}demo/hiv">HIV EMR Demo</a></li>
+										<li><a href="{{ site.url }}{{ site.baseurl }}demo/mch">MCH EMR Demo</a></li>
+									</ul>
+								</li>
 								<li><a href="https://github.com/uamuzibora">Code</a></li>
 							</ul>
 						</div><!--/.nav-collapse -->
@@ -72,9 +79,15 @@
 		{% if page.extra == 'dashboard' %}
 		<script src="{{ site.url }}{{ site.baseurl }}assets/js/dashboard/d3.v2.min.js"></script>
 		<script src="{{ site.url }}{{ site.baseurl }}assets/js/dashboard/nv.d3.min.js"></script>
-		<script src="{{ site.url }}{{ site.baseurl }}assets/js/dashboard/data_dynamic.js"></script>
 		<script src="{{ site.url }}{{ site.baseurl }}assets/js/dashboard/ub_chart.js"></script>
+		{% if page.title == 'HIV Dashboard' %}
+		<script src="{{ site.url }}{{ site.baseurl }}assets/js/dashboard/data_hiv.js"></script>
 		<script src="{{ site.url }}{{ site.baseurl }}assets/js/dashboard/dashboard-hiv.js"></script>
+		{% endif %}
+		{% if page.title == 'MCH Dashboard' %}
+		<script src="{{ site.url }}{{ site.baseurl }}assets/js/dashboard/data_mch.js"></script>
+		<script src="{{ site.url }}{{ site.baseurl }}assets/js/dashboard/dashboard-mch.js"></script>
+		{% endif %}
 		{% endif %}
 		{% include tracking.html %}
 	</body>

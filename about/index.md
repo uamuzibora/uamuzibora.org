@@ -1,15 +1,17 @@
 ---
 layout: page
 title: About
-group: navbar
-weight: 2
+header: Welcome to Uamuzi Bora!
+section: About
+order: 1
 ---
 
-Hello world!
+<p class="lead">We are a UK charity working to improve public health and primary care in Kenya.</p>
 
-## This is a subheader
+Uamuzi Bora means _a better choice_ in Luhya, a local language spoken in Western Kenya, and was chosen by the local communities to describe the work we do.
 
-### This is a smaller subheader
+We believe the delivery of primary health care can be improved through the use of information technology and an electronic medical record, particularly in resource constrained settings such as Kenya.
 
-Do you see any [Teletubbies](/data) in here? Do **you see** a _slender_ plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.
+We work with the [Ministry of Health](http://www.publichealth.go.ke) in Kenya to strengthen pathways of care and support, including linkage to care, clinical decision support, adherence to treatment and retention in care.
 
+We hope you enjoy reading about [our work](/projects).

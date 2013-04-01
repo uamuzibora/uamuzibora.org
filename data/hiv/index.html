@@ -2,9 +2,10 @@
 layout: normal
 title: HIV Dashboard
 extra: dashboard
+section: Data
 ---
 		<div class="row">
-			<div class="span12">
+			<div class="span10 offset1">
 				<ul class="nav nav-tabs" id="tablist">
 					<li class="active">
 						<a href="#home" data-toggle="tab">Home</a>
@@ -27,53 +28,61 @@ extra: dashboard
 		<div class="row">
 			<div class="span12 tab-content">
 					<div class="tab-pane active" id="home">
-						<div class="page-header">
-							<h1>Programme Indicators</h1>
+						<div class="row">
+							<div class="page-header span9 offset1">
+								<h1>HIV Programme Indicators <small>updated on <span id="lastDate"></span></small></h1>
+								<p class="lead">We use the following indicators to measure the impact of <a href="{{site.url}}{{site.baseurl}}projects/hiv">our HIV project</a> in Western Kenya.</p>
+							</div>
 						</div>
 						<div class="row dashnum">
 							<div class="span3 offset1 well well-small">
-								<h3>Enrolled Patients</h3>
-								<div id="enrolledPatients"></div>
+								<h3>Patients Enrolled</h3>
+								<div id="enrolledPatients"><img src="{{site.url}}{{site.baseurl}}assets/img/loading-icon.gif"></div>
 								<div id="enrolledPatientsPercent"></div>
-								<p class="small muted">Total patients enrolled</p>
+								<p class="small muted">Total patients <a href="#enrolledPatients" data-toggle="tooltip" data-placement="bottom" title="'Enrollment' is the process of entering a patient's paper record into our electronic medical record">enrolled</a></p>
 							</div>
 							<div class="span3 well well-small">
 								<h3>On ART</h3>
-								<div id="onArt"></div>
+								<div id="onArt"><img src="{{site.url}}{{site.baseurl}}assets/img/loading-icon.gif"></div>
 								<div id="onArtPercent"></div>
-								<p class="small muted">Patients receiving ART</p>
+								<p class="small muted">Patients <a href="#onArt" data-toggle="tooltip" data-placement="bottom" title="Patients who have been prescribed and provided with antiretroviral treatment">receiving ART</a></p>
 							</div>
 							<div class="span3 well well-small">
 								<h3>Eligible Not On ART</h3>
-								<div id="eligibleNotOnArt"></div>
+								<div id="eligibleNotOnArt"><img src="{{site.url}}{{site.baseurl}}assets/img/loading-icon.gif"></div>
 								<div id="eligibleNotOnArtPercent"></div>
-								<p class="small muted">Patients eligible but not receiving ART</p>
+								<p class="small muted">Patients <a href="#eligibleNotOnArt" data-toggle="tooltip" data-placement="bottom" title="Eligibility for antiretroviral treatment in Kenya is defined as a CD4 count &lt;350 or WHO stage 3 or 4">eligible</a> but not receiving ART</p>
 							</div>
 						</div>
 						<div class="row dashnum">
 							<div class="span3 offset1 well well-small">
 								<h3>Lost To Follow Up</h3>
-								<div id="lostToFollowup"></div>
+								<div id="lostToFollowup"><img src="{{site.url}}{{site.baseurl}}assets/img/loading-icon.gif"></div>
 								<div id="lostToFollowupPercent"></div>
-								<p class="small muted">Patients who are lost to follow up</p>
+								<p class="small muted">Patients who are <a href="#lostToFollowup" data-toggle="tooltip" data-placement="bottom" title="Defined as a patient not attending clinic for &gt;3 months">lost to follow up</a></p>
 							</div>
 							<div class="span3 well well-small">
 								<h3>Followed Up</h3>
-								<div id="lostPatientsFollowedUp"></div>
+								<div id="lostPatientsFollowedUp"><img src="{{site.url}}{{site.baseurl}}assets/img/loading-icon.gif"></div>
 								<p class="small muted">Patients who have been contacted or traced having been previously lost to follow up</p>
 							</div>
 							<div class="span3 well well-small">
 								<h3>Complete Records</h3>
-								<div id="completedRecords"></div>
+								<div id="completedRecords"><img src="{{site.url}}{{site.baseurl}}assets/img/loading-icon.gif"></div>
 								<div id="completedRecordsPercent"></div>
-								<p class="small muted">Records with all four core parameters</p>
+								<p class="small muted">Records without <a href="#completedRecords" data-toggle="tooltip" data-placement="bottom" title="Initial WHO stage, CD4 count, HIV+ date and ART eligibility date are required for a complete record">missing data</a></p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="span10 offset1">
+								<p class="small mute"><span class="label label-info">Info</span> The displayed percentages are the proportional change of the indicator since 5th October 2012.</p>
 							</div>
 						</div>
 					</div>
 					<div class="tab-pane" id="overview">
 						<div class="row">
 							<div class="span12">
-								<h2 class="chart-header">Enrolled patients over time</h2>
+								<h2 class="chart-header">Patients enrolled</h2>
 								<div id="overview_timeline_chart" class="overview_timeline_chart chart">
 									<svg></svg>
 								</div>
@@ -94,7 +103,7 @@ extra: dashboard
 					<div class="tab-pane" id="data">
 						<div class="row">
 							<div class="span12">
-								<h2 class="chart-header">Missing data over time</h2>
+								<h2 class="chart-header">Missing data</h2>
 								<div id="data_missing_chart" class="data_missing_chart chart">
 									<svg></svg>
 								</div>
@@ -103,7 +112,7 @@ extra: dashboard
 						<hr>
 						<div class="row">
 							<div class="span12">
-								<h2 class="chart-header">Percentage change in missing core parameters</h2>
+								<h2 class="chart-header">Percentage change in missing data</h2>
 								<div id="data_missing_parameters_chart" class="data_missing_chart chart">
 									<svg></svg>
 								</div>
@@ -113,7 +122,7 @@ extra: dashboard
 					<div class="tab-pane" id="clinical">
 						<div class="row">
 							<div class="span12">
-								<h2 class="chart-header">Patients on ART over time</h2>
+								<h2 class="chart-header">Patients on ART</h2>
 								<div id="clinical_on_art_by_who_stage_timeline_chart" class="data_missing_chart chart">
 									<svg></svg>
 								</div>
@@ -122,7 +131,7 @@ extra: dashboard
 						<hr>
 						<div class="row">
 							<div class="span12">
-								<h2 class="chart-header">Eligible patients not receiving ART over time</h2>
+								<h2 class="chart-header">Eligible patients not receiving ART</h2>
 								<div id="clinical_eligible_not_on_art_timeline_chart" class="data_missing_chart chart">
 									<svg></svg>
 								</div>
@@ -143,7 +152,7 @@ extra: dashboard
 					<div class="tab-pane" id="followup">
 						<div class="row">
 							<div class="span12">
-								<h2 class="chart-header">Patients exited care over time</h2>
+								<h2 class="chart-header">Patients exited care</h2>
 								<div id="followup_exit_timeline_chart" class="data_missing_chart chart">
 									<svg></svg>
 								</div>
@@ -152,7 +161,7 @@ extra: dashboard
 						<hr>
 						<div class="row">
 							<div class="span12">
-								<h2 class="chart-header">Patiets lost to follow up willing to return over time</h2>
+								<h2 class="chart-header">Patiets lost to follow up willing to return</h2>
 								<div id="followup_return_timeline_chart" class="data_missing_chart chart">
 									<svg></svg>
 								</div>
