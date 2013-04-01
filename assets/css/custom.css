@@ -81,12 +81,50 @@ body {
 
 
 .img-circle {
-  width:140px;
-  height:140px;
+  width:100px;
+  height:100px;
 }
 
 .no-carousel {
-  margin-top: 100px;
+  margin-top: 20px;
+}
+
+.photo-spacer {
+  height: 200px;
+  /*background: url(../img/banner-1.jpg) top center no-repeat fixed;*/
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+}
+
+.spacer-background-Contact {
+  background: url(../img/banner-contact.jpg) top center no-repeat fixed;
+}
+
+.spacer-background-About {
+  background: url(../img/banner-about.jpg) top center no-repeat fixed;
+}
+
+.spacer-background-Projects {
+  background: url(../img/banner-projects.jpg) top center no-repeat fixed;
+}
+
+.spacer-background-News {
+  background: url(../img/banner-news.jpg) top center no-repeat fixed;
+}
+
+.spacer-background-Privacy {
+  background: url(../img/banner-contact.jpg) top center no-repeat fixed;
+}
+
+.no-photo-spacer {
+  padding-top: 70px;
+}
+
+.marketing dl {
+  text-align: left;
+  padding-left: 10%;
 }
 
 
@@ -223,7 +261,25 @@ body {
     height: 500px;
 }
 .slide-3 {
-    background: url(../img/slides/slide-3.jpg) no-repeat center center;
+    background: url(../img/slides/slide-6.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 500px;
+}
+
+.slide-4 {
+    background: url(../img/slides/slide-4.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 500px;
+}
+
+.slide-5 {
+    background: url(../img/slides/slide-7.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -411,5 +467,22 @@ body {
 }
 
 .bar-chart {
-  height: 300px;
+  height: 400px;
+}
+
+
+/* Change height/width on small displays */
+@media (max-width: 767px) {
+  .overview_timeline_chart, .data_missing_chart svg {
+    height: 200px;
+  }
+
+  .pie_chart {
+    min-width: 200px;
+    min-height: 200px;
+  }
+
+  .bar-chart {
+    height: 200px;
+  }
 }

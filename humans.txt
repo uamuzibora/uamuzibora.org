@@ -2,16 +2,80 @@
 /* uamuzibora.org */
 /* humanstxt.org */
 
-/* AUTHORS */
-  Kenrick Turner - Architect
-    <kenrick@uamuzibora.org>
-  Gunnar Rø - Data Tsar
-    <gunnar@uamuzibora.org>
-  John Haskew - Chief Protagonist
-    <john@uamuzibora.org>
+/* TEAM */
+  Kenrick Turner
+    - HTML Wrangler
+    - http://kenners.org
+    - @kenrick
+    - kenrick@uamuzibora.org    
 
+  Gunnar Rø
+    - Data Tsar
+    - gunnar@uamuzibora.org
+  
+  John Haskew
+    - Chief Protagonist
+    - john@uamuzibora.org
 
 /* SITE */
-  Standards: HTML5, CSS3
-  Components: jQuery, Bootstrap, nvd3.js, jsPDF
-  Software: Sublime Text, Git
+  - Last update: 2013-04-01
+  - Standards: HTML5, CSS3
+  - Components: jQuery, Bootstrap, nvd3.js, jsPDF
+  - Software: Sublime Text, Git
+
+
+"Simba sucks"
+
+                 MMDI                                                           
+             I7MDIIIIMM            IO                                           
+           OI7ZIIIIIIIIIIM      M?IIIIZ                                         
+          ZMMIIIIIIIIIIIIII?M MIIIIIMMMM                                        
+ M??D    MIOONIIIIIIII?OOIIIIIIIIIIM$MMMM                                       
+8IIIIII?DI?MN7IIIIIIIM?IIZMIIIIIIIM$$$NMM                                       
+MMMIIIIMIIIII7IIIIIIMIIIIIINIIIII$8$$$$MM                                       
+MM$Z?I8$DMIIIOIIIIIIII$MMIII?IIIIMMZ$$$MM                                       
+M8$$$MMII$MIIIIIIIIIII====NIDIIM$N$$$$$MM                                       
+MM$$$$MIM==?IIIIIIIIIMMMMNIIMIIO$$$$$$MM                                        
+ MN$$$$?~NMMIII?OIIIIMMMMD88IIIIM$$$$MM                                         
+  MM$$$DIMMMIIIIIIIIIMMMM?$IIIIIMMMMMM                                          
+   MMMMIIONIIIIIIIII7III$IIIIIIIO .                                             
+      MII?IIIIII8DZM=7MIIII?I?IIM                                 M$$$ZM  .     
+      MD?IN======MN~~N?=MIIIIIID                                 M$$$$$$$ND     
+       ?I$=OM===N?=====M~MI$NIM                                +$$$$$$$O$N$N    
+        IIM===D=======OMIIIIII?                               D?=7N$$$$$$$$$N   
+        Z.ZM~?8ZZMZMMMO=MI?MIIZM                                     DZ$$$$$O8  
+         O .MZZM~~~~ M=~I8IIIIIIIM                                     MMMMM$M= 
+        O   M~MZ=?M8====DIIIIIIIII?                                          MI 
+            M~=========OOIIIIIIIIII?                                         MI,
+             M~=======M?IIIIIIIIIIIID                                        DI7
+              O7+~~INIIIIIII8IIIIIIII?:                                      ?I 
+              MI?IIIIIIIIIII7IIIIIIIIMIN                                    MIM 
+             .IIIIIII?MMIII8IIIIIIIIIIIII$                                 MIZ  
+             MIIIMZ~~===87IZIIIIIIIIIIIIII8M                              ZI7   
+             NIIIM========~IIIIIIIIIIIIIIIIIII?OM?                     ?MIID    
+             7IIIZ=========MIIIIIIIIIIIIIIIIIIIIIIIIIIMO        .7MD?I?IIM      
+              IIIM==========IIIIIIIIIIIIIIIIIIIIIIIIIIIIIOIIIIIIIIIIIIM         
+              MIID~=========MIIIIIIIIIIIIIIIIIIIIIIIIIIIIIMIIII8M=              
+               ZI7M==========DIIIIIIIIIIIIIIIIIIIIIIIIIIIIIM                    
+               M7II?Z=========MIIIIIIIIIIIIIIIIIIIIIIIIIIIIIM                   
+               MIIIIIIM=======DOIIIIIIIIIIMIIIIIIIIIIIIIIIIII?                  
+               ,?IIIIIIMM=====D?IIIIIIIIIIIMIIIIIIMIIIIIIIIIII                  
+                DIIIIIIIM=====MIIIIIIIIIIIIDIIIIII?IIIIIIIIIII.                 
+                MIIIIIIIIM====MIIIIIIIIIIIIM$IIIIIIIIIIIIIIIIIM                 
+                 IIIIIIIIID~==IIIIIIIIIIIIIM~DIIIIIMIIIIIIIIIID                 
+                 IIIIIIIIIIZ==~?IIIIIIIIIIID==~DMMIMIIIIIIIIIII                 
+                 MIIIIIIIIII?M=ZIIIIIIIIII7~=======~?IIIIIIIIIIM                
+                 ?IIIIIIIIIIZ  MIIIIIIIIIIM=========MIIIIIIIIII?.               
+                  IIIIIIII??   OIIIIIIIIIINDMMMI     DIIIIIIIIII?               
+                  $IIIIIIIIM   .IIIIIIIIIIIII+        $IIIIIIIIIIM              
+                  $IIIIIIIIM    ?IIIIIIIIIIIID         OIIIIIIIIIIIM            
+                  ?IIIII?IIO    ?IIIIIIII?IIII7          I?IIIIIIIIII           
+               =$O??IIII?IIM   NIIIIIIIIIIIII?              NIIIIIIIM           
+             MM===M==MIIIIO   MM8IIIIIIIIIIIID              .I7IIIIIO           
+            I=~==D===Z~D?IIO~~===$~OZIIIIOIII.              MIIIIIIII           
+            ~===~===I===~I+=D==M====D==MIOII?            OM~==MMMIII?           
+            8~==~===M====M==~=~~==~?===~OMIIM           D+~==N===~~MI.          
+             OM==M==8~~~ZN==~=====M====~MII$            =M==~I==8===O:          
+                         :~=8=~========~OI              MM==~~==$===8           
+                             DM8==$===Z                   M=~O==D==             
+                                                               ?  

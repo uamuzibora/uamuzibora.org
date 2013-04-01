@@ -55,6 +55,13 @@ function scale(data,scaling,scale,level){
 		return_data[key][key2] = data[key][key2] / scaling[key] * scale
 	    }
 	}
+	if(level == 3){
+	    return_data[key] = {}
+	    for (key2 in data[key]){
+		return_data[key][key2] = data[key][key2] / scaling[key][key2] * scale
+	    }
+	}
+
 
     }
     return return_data
@@ -213,7 +220,7 @@ function line_chart(data,chart_id,scaling,xAxisLabel,yAxisLabel){
 	    } else {
 		scale = 1
 	    }
-	    timedata_t[loc].push([parseInt(keys[i]),data[keys[i]][loc] / scale]);
+	    timedata_t[loc].push([parseInt(keys[i]),Math.round(data[keys[i]][loc] / scale*100)/100]);
 	}
     }
     var timedata=[];
@@ -474,6 +481,87 @@ function multi_bar_chart(data,chart_id){
 	
 	chart.yAxis
 	    .tickFormat(d3.format('n'))
+	    .showMaxMin(false);
+	
+	d3.select('#'+chart_id)
+            .datum(datum)
+	    .transition().duration(500).call(chart);
+	
+	nv.utils.windowResize(chart.update);
+	
+    return chart;
+    });
+}
+
+function pretty_date(date) {
+    var day = date.getDate();
+    var year = date.getFullYear();
+    var month_array = {0:"January",
+                       1:"February",
+                       2:"March",
+                       3:"April",
+                       4:"May",
+                       5:"June",
+                       6:"July",
+                       7:"August",
+                       8:"September",
+                       9:"October",
+                       10:"November",
+                       11:"December"};
+    var month = month_array[date.getMonth()];
+    var ordinal_array = {1:"st",
+                         2:"nd",
+                         3:"rd",
+                         4:"th",
+                         5:"th",
+                         6:"th",
+                         7:"th",
+                         8:"th",
+                         9:"th",
+                         10:"th",
+                         11:"th",
+                         12:"th",
+                         13:"th",
+                         14:"th",
+                         15:"th",
+                         16:"th",
+                         17:"th",
+                         18:"th",
+                         19:"th",
+                         20:"th",
+                         21:"st",
+                         22:"nd",
+                         23:"rd",
+                         24:"th",
+                         25:"th",
+                         26:"th",
+                         27:"th",
+                         28:"th",
+                         29:"th",
+                         30:"th",
+                         31:"st"};
+    var ordinal = ordinal_array[date.getDate()];
+    return day + ordinal + ' ' + month + ' ' + year;
+}
+function bar_chart(data,chart_id){
+    var tmp=[]
+    for (value in data){
+	tmp.push({"x":value,"y":data[value]})
+    }
+    datum=[{"key":"","values":tmp}]
+
+    nv.addGraph(function() {
+	var chart = nv.models.multiBarChart()
+	    .x(function(d) { return d.x })
+	    .y(function(d) { return d.y })
+	    .stacked(true)
+	    .showControls(false)
+	    .showLegend(false)
+//	chart.xAxis
+  //          .tickFormat(d3.format(',f'));
+	
+	chart.yAxis
+	    .tickFormat(d3.format('p'))
 	    .showMaxMin(false);
 	
 	d3.select('#'+chart_id)

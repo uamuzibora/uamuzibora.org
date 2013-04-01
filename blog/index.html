@@ -1,8 +1,19 @@
 ---
 layout: page
 title: News
-group: navbar
-weight: 3
+header: News from Uamuzi Bora
+section: News
+order: 1
 ---
 
-Hello world!
+<p class="lead">Read our latest updates here.</p>
+	{% for post in site.posts %}
+	<article id="{{post.id}}">
+		<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+		<p class="muted">Posted by {{ post.author }} at {{ post.date }}</p>
+		<div>
+			{{ post.content }}
+		</div>
+	</article>
+	<hr>
+	{% endfor %}

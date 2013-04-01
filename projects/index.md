@@ -1,13 +1,19 @@
 ---
 layout: page
 title: Projects
+header: Our projects
+section: Projects
+order: 1
 ---
 
-Hello world!
+<p class="lead">We support the <a href="http://www.publichealth.go.ke">Ministry of Health</a> and partners in Kenya to implement mobile information technology and an electronic medical record for <a href="/projects/hiv">HIV</a> and <a href="/projects/mch">Maternal and Child Health</a>.</p>
 
-## This is a subheader
+Our EMR supports four key functions:
 
-### This is a smaller subheader
+ 1. **Data verification** - to improve the completeness and accuracy of the patient record by running automated database queries and by enabling health records clerks to identify and update incomplete records.
 
-Do you see any [Teletubbies](/data) in here? Do **you see** a _slender_ plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.
+ 2. **Clinical reminders** - to support clinicians during consultations through the use of clinical decision support.
 
+ 3. **Follow up** - to identify patients who have exited care and ensure they are contacted, either by SMS reminder or by phone call, to support return to clinic and retention in care.
+
+ 4. **Reporting** - to create standardised reports for the Ministry of Health that can be accessed at clinic, district, provincial and national levels to inform public health and clinical decision making.
