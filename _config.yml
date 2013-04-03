@@ -23,3 +23,12 @@ maruku:
   png_engine: blahtex
   png_dir:    images/latex
   png_url:    /images/latex
+
+flickr_set:
+  gallery_tag:   'p'
+  gallery_class: 'gallery'
+  a_href:        nil
+  a_target:      '_blank'
+  image_rel:     ''
+  image_size:    's'
+  api_key:       'd4c545fcedfbd389f48ee57ae335257c'
