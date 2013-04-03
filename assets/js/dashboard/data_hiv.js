@@ -1,7 +1,7 @@
 
 function data(){
     jdata=[]
-    var request=$.post("https://uamuzibora.org/api/hiv/all",
+    var request=$.get("https://uamuzibora.org/api/hiv/all",
 	   {},
 	   function(data,status){
 	       jdata=data
