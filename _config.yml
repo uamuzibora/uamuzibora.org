@@ -9,7 +9,7 @@ destination: ./_site
 plugins:     ./_plugins
 includes:    ./_includes
 permalink:   /blog/articles/:year/:title
-paginate: 5
+paginate: 3
 paginate_path: /blog/:num
 
 future:      true
