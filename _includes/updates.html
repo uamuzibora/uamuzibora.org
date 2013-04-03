@@ -1,6 +1,6 @@
 {% for post in paginator.posts %}
 <dl>
 	<dt><a href="{{ post.url }}">{{ post.title }}</a></dt>
-	<dd class="muted">by {{ post.author }} &middot; {{ post.date }}</dd>
+	<dd class="muted">by {{ post.author }} &middot; {{ post.date | date_to_string }}</dd>
 </dl>
 {% endfor %}

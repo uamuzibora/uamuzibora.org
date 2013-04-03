@@ -10,7 +10,7 @@ order: 1
 	{% for post in site.posts %}
 	<article id="{{post.id}}">
 		<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-		<p class="muted">Posted by {{ post.author }} at {{ post.date }}</p>
+		<p class="muted">Posted by {{ post.author }} at {{ post.date | date_to_long_string }}</p>
 		<div>
 			{{ post.content }}
 		</div>
