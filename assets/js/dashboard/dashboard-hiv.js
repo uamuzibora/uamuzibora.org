@@ -1,5 +1,4 @@
 jdata=data();
-
 function load_numbers(){
     var keys = Object.keys(jdata);
     keys.sort();

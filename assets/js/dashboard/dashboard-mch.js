@@ -1,10 +1,4 @@
 jdata=data();
-load_numbers();
-$(document).ready(function(){
-	 //   	jdata=data();
-   // load_numbers()
-});
-
 function percent(then,now,percent){
     if(percent){
 	return Math.round((now-then)/then *100)
