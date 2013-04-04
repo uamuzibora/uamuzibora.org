@@ -116,6 +116,10 @@ body {
   background: url(../img/banner-contact.jpg) top center no-repeat fixed;
 }
 
+.spacer-background-Data {
+  background: url(../img/banner-about.jpg) top center no-repeat fixed;
+}
+
 .no-photo-spacer {
   padding-top: 70px;
 }
