@@ -15,14 +15,14 @@ paginate_path: /blog/:num
 future:      true
 lsi:         false
 pygments:    false
-markdown:    maruku
+markdown:    kramdown
 
 maruku:
   use_tex:    false
   use_divs:   false
   png_engine: blahtex
-  png_dir:    images/latex
-  png_url:    /images/latex
+  png_dir:    assets/img/latex
+  png_url:    /assets/img/latex
 
 flickr_set:
   gallery_tag:   'p'
