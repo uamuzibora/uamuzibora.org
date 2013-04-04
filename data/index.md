@@ -9,7 +9,7 @@ section: Data
 
 ## Our infrastructure: how we collect and store our data
 
-Our system consists of a physical server running located in Kakamega using WiMAX to connect to a Virtual Private Network (VPN) running across the internet to a number of client machines in different clinics in the region.
+Our system consists of a physical server located in Kakamega, Kenya, using WiMAX to connect to a Virtual Private Network (VPN) running across the internet to a number of client machines in different clinics in the region.
 
 Client machines are usually Google Chromebooks, which use a 3G mobile internet connection to connect directly with the VPN. The 3G mobile internet connection does not permit access to the internet, and Wifi and Ethernet networking on the client machines is disabled.
 
