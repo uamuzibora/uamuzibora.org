@@ -5,9 +5,9 @@ header: Our data
 section: Data
 ---
 
-<p class="lead">As a electronic medical record, Uamuzi Bora inherently captures and stores patient identifiable information. Here we explain how we collect, store, protect, and use the data to calculate our indicators. Further, we now share aggregated data with selected partners using an API.</p>
+<p class="lead">As an electronic medical record, Uamuzi Bora inherently captures and stores patient identifiable information. Here we explain how we collect, store, protect, and use the data to calculate our indicators. Further, we now share aggregated data with selected partners using an API.</p>
 
-## Our infrastructure: how we collect and store our data
+## Data collection and storage
 
 Our system consists of a physical server located in Kakamega, Kenya, using WiMAX to connect to a Virtual Private Network (VPN) running across the internet to a number of client machines in different clinics in the region.
 
@@ -17,7 +17,7 @@ We use customised version of [OpenMRS](http://www.openmrs.org): an [Apache Tomca
 
 Clinicians and medical record clerks use the client machines to search, view, edit and create electronic patient records within the OpenMRS web application.
 
-## Data protection: how we protect our data
+## Data protection
 
 ### Protecting data in transit
 
@@ -45,6 +45,142 @@ We consider patient identification numbers, names, data of birth, relations, fir
 
 The anonymous database is used to create aggregated data that is transferred over a VPN to our public webserver for use in our dashboard indicators and our API, which allows selected partners access to our aggregated data.
 
-## Our dashboard: how we calculate our indicators
+## Calculation of dashboard indicators
 
-## Our API: how we make data available to partners
+We define a number of indicators to monitor our progress in our [HIV](/data/hiv) and [MCH](/data/mch) dashboards. We provide a comprehensive explanation of what these indicators represent and how they are calculated below.
+
+### HIV
+
+All **percentage change** indicators are calculated from our [HIV project](/projects/hiv) start date of 5th October 2012.
+
+#### Patients Enrolled
+
+ - Total number of patients enrolled
+ - Percentage change in the number of patients enrolled since the start date
+
+$$PercentageChange = \frac{(PatientsEnrolled_{start})-(PatientsEnrolled_{today})}{PatientsEnrolled_{start}}\times100$$
+
+#### On ART
+
+ - Total number of patients receiving ART
+ - Percentage change in the total number of patients receiving ART since the start date
+
+$$PercentageChange = \frac{(OnART_{start})-(OnART_{today})}{OnART_{start}}\times100$$
+
+#### Eligible not on ART
+
+ - Total number of patients who are eligible for ART, but are not receiving ART
+ - Percentage change in the fraction of eligible patients not receiving ART since the start date
+
+$$PercentageChange = \frac{\frac{EligibleNotOnART_{start}}{EligibleForART_{start}}-\frac{EligibleNotOnART_{today}}{EligibleForART_{today}}}{\frac{EligibleNotOnART_{start}}{EligibleForART_{start}}}\times100$$
+
+#### Lost to Follow Up
+
+ - Number of People lost to follow up
+ - Percentage change of the fraction of patients who are lost to follow up since the start date
+
+$$PercentageChange = \frac{\frac{LostToFollowUp_{start}}{PatientsEnrolled_{start}}-\frac{LostToFollowUp_{today}}{PatientsEnrolled_{today}}}{\frac{LostToFollowUp_{start}}{PatientsEnrolled_{start}}}\times100$$
+
+#### Followed Up
+
+ - Patients lost to follow up who have been contact
+
+#### Complete Records
+
+ - Number of records without missing data
+ - Percentage change in the fraction of records that are complete since the start date
+
+$$PercentageChange = \frac{\frac{CompleteRecords_{start}}{PatientsEnrolled_{start}}-\frac{CompleteRecords_{today}}{PatientsEnrolled_{today}}}{\frac{CompleteRecords_{start}}{PatientsEnrolled_{start}}}\times100$$
+
+###MCH
+
+All **percentage change** indicators are calculated from our [MCH project](/projects/mch) start date of 2nd April 2013.
+
+#### Women Enrolled
+
+ - Total number of pregnant women enrolled
+ - Percentage change in the total number of pregnant women enrolled from the start date
+
+$$PercentageChange = \frac{WomenEnrolled_{start}-WomenEnrolled_{today}}{Women Enrolled_{start}}\times100$$
+
+#### Deliveries
+
+ - Number of deliveries recorded
+ - Percent change in the fraction of enrolled women with a recorded delivery from the start date
+
+$$PercentageChange = \frac{\frac{Deliveries_{start}}{WomenEnrolled_{start}}-\frac{Deliveries_{today}}{WomenEnrolled_{today}}}{\frac{Deliveries_{start}}{WomenEnrolled_{start}}}\times100$$
+
+#### Children Enrolled
+
+ - Total number of Children
+ - Percentage change in the number of enrolled children from the start date
+
+$$PercentageChange = \frac{ChildrenEnrolled_{start}-ChildrenEnrolled_{today}}{ChildrenEnrolled_{start}}\times100$$
+
+#### Women on ART
+
+ - Total number of HIV+ women on ART
+ - Percentage change in the fraction of HIV positive women who receive ART since the start date
+
+$$PercentageChange = \frac{\frac{WomenOnART_{start}}{WomenHIVPositive_{start}}-\frac{WomenOnART_{today}}{WomenHIVPositive_{today}}}{\frac{WomenOnART_{start}}{WomenHIVPositive_{start}}}\times100$$
+
+#### Malaria Prophylaxis
+
+ - Number of women receiving Malaria Prophylaxis
+ - Percent change in the fraction of enrolled women receiving a complete course of Malaria Prophylaxis sicne the start date
+
+$$PercentageChange = \frac{\frac{CompletedMalariaProphylaxis_{start}}{WomenEnrolled_{start}}-\frac{CompletedMalariaProphylaxis_{today}}{WomenEnrolled_{today}}}{\frac{CompletedMalariaProphylaxis_{start}}{WomenEnrolled_{start}}}\times100$$
+
+#### Complete Records
+
+ - Number of records without missing data
+ - Percentage change in the fraction of records that are complete since the start date
+
+$$PercentageChange = \frac{\frac{CompleteRecords_{start}}{WomenEnrolled_{start}}-\frac{CompleteRecords_{today}}{WomenEnrolled_{today}}}{\frac{CompleteRecords_{start}}{WomenEnrolled_{start}}}\times100$$
+
+## Our API
+
+We have created an [application programming interface (API)](http://en.wikipedia.org/wiki/Application_programming_interface) so that our data can be accessed programmatically. An API key is required to access certain data. Please [email us](mailto:team@uamuzibora.org) if you would like a key.
+
+### Root URL
+
+All methods should be appended to our API root URL:
+
+`https://uamuzibora.org/api`
+
+Unless otherwise specified, all data are returned in JSON format.
+
+### Available methods
+
+#### Methods available without an API key
+
+`/locations/hiv` returns a list of all the locations in the HIV database
+
+`/hiv/all` returns all the aggregated data required by the [HIV dashboard](/data/hiv)
+
+`/mch/all` returns all the aggregated data required by the [MCH dashboard](/data/mch)
+
+`/hiv/total_patients` returns the total number of HIV patients
+
+`/mch/total_patients` returns the total number of MCH patients
+
+
+### Methods requiring an API key
+
+Access to the following methods requires an API key. You should include your API key as part of your request as a `GET` variable e.g.:
+
+`https://uamuzibora.org/api/performance/hiv?api-key=your_api_key`
+
+Please note that a separate API key is required for the HIV and MCH databases. An incorrect or unauthorised API key will return HTTP Error 401 (Access Forbidden).
+
+`/performance/hiv` returns a JSON object with a list of how many forms each user has entered each day into the HIV database
+
+`/performance/hiv/[date]` returns a JSON object with a list of how many forms each user has entered each week since \[date\](in ISO format: YYYY:MM:DD) in the HIV database. The data can be requested in CSV format by appending `type=csv` to the request.
+
+`performance/hiv` returns a JSON object with a list of how many forms each user has entered each day in the MCH database
+
+`/performance/hiv/[date]` returns a JSON object with a list of how many forms each user has entered each week since \[date\](in ISO format: YYYY:MM:DD) in the MCH database. The data can be requested in CSV format by appending `type=csv` to the request.
+
+`/patients/mch` returns a JSON object with a line for each patient with data from the MCH database. The data can be requested in CSV format by appending `type=csv` to the request.
+
+`/patients/hiv` returns a JSON object with a line for each patient with data from the HIV database. The data can be requested in CSV format by appending `type=csv` to the request.
