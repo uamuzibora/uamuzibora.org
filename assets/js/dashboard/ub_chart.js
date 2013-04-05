@@ -199,6 +199,7 @@ function total_time_data(data,level){
 function line_chart(data,chart_id,scaling,xAxisLabel,yAxisLabel){
     var timedata_t = {}
     keys = Object.keys(data)
+    keys.sort()
     locations = Object.keys(data[keys[keys.length - 1]]);
     max = 0;
     max_number = 0;
