@@ -1,4 +1,4 @@
-/* Uamuzi Bora - Making HIV care awesome */
+/* Uamuzi Bora */
 /* uamuzibora.org */
 /* humanstxt.org */
 
