@@ -10,12 +10,10 @@ function percent(then,now,percent){
 function load_numbers(){
     var keys = Object.keys(jdata);
     keys.sort();
-
     first_date = keys[0]
     first_date_d = new Date(first_date)
-
-    percent_date_d= new Date("May 6, 2013")
-    percent_date=percent_date_d.getTime()
+    percent_date="2013-05-06T03:11:42.633000"
+    percent_date_d= new Date(percent_date)
     keys.reverse()
     latest_date = keys[0]
     latest_date_d = new Date(latest_date);
