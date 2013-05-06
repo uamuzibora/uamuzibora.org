@@ -12,9 +12,9 @@ function load_numbers(){
     keys.sort();
 
     first_date = keys[0]
-    first_date_d = new Date("May 6, 2013")
-    percent_date=first_date
-    percent_date_d=first_date_d
+    first_date_d = new Date(first_date)
+    percent_date_d= new Date("May 6, 2013")
+    percent_date=percent_date_d.getTime()
     keys.reverse()
     latest_date = keys[0]
     latest_date_d = new Date(latest_date);
@@ -88,7 +88,6 @@ function load_numbers(){
     } else {
     $('#ipt13Percent').html('<h2 class="dashnum text-error">(' + ipt13_percent + '%)</h2>');
     }
-    $('#ipt13Percent').html('<h2 class="dashnum muted">(%)</h2>')
     //Complete Records
     complete_records=jdata[latest_date]["complete_records"]
     $('#completedRecords').html('<h1 class="dashnum">' + addCommas(complete_records) + '</h1>');
