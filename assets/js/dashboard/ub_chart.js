@@ -41,6 +41,61 @@ function table(data,location){
     return html + '</tr></table>';
 };
 
+function table_mch(data,mother,sub_total){
+    if (mother){
+	html='<table class="table table-bordered table-hover"><tr><td></td> \
+		<th><18yrs</th><th>>18yrs</th><th>Total</th></tr>';
+	sums=[0,0,0]
+	keys = Object.keys(data);
+	for (var k = 0; k < keys.length; k++){
+	    key = keys.sort()[k]
+	    html += '<tr><td>' + key + '</td>'
+	    sum=0
+	    for (var j = 0; j < 2; j++){
+		sum +=data[key][j];
+		html += '<td>' + data[key][j] + '</td>'
+		sums[j]+=data[key][j];
+	    }
+	    html += '<td>' + sum + '</td></tr>'
+	    sums[2]+=sum
+	}
+    }else{
+	html='<table class="table table-bordered table-hover"><tr><td></td> \
+		<th colspan="2">0-1yrs</th><th colspan="2">1-5yrs</th> \
+		<th colspan="2">Totals</th><th>Grand Totals</th></tr> \
+		<tr><td></td><th>M</th><th>F</th><th>M</th><th>F</th><th>M</th><th>F</th><td></td>';    
+	var sums = [0,0,0,0,0,0,0]
+	keys = Object.keys(data);
+	for (var k = 0; k < keys.length; k++){
+	    key = keys.sort()[k]
+	    html += '<tr><td>' + key + '</td>'
+	    var sum_m = 0;
+	    var sum_f = 0;
+	    for (var j = 0; j < 4; j++){
+		sum = data[key][j];
+		if (j == 0 || j == 2){
+		    sum_m += sum
+		} else {
+		    sum_f += sum
+		}
+		sums[j] += sum;
+		html += '<td>' + sum + '</td>'
+	    }
+	    sums[4] += sum_m
+	    sums[5] += sum_f
+	    sums[6] += (sum_m + sum_f)
+	    html += '<td>' + sum_m + '</td><td>' + sum_f + '</td><td>' + (sum_m + sum_f) + '</tr>'
+	}
+    }
+    if(keys.length > 1 && sub_total){
+	html += "<tr><td>Sub-total</td>"
+	for (var i = 0; i < sums.length; i++){
+	    html += '<td>' + sums[i] + '</td>'
+	}
+    }
+    return html + '</tr></table>';
+};
+
 function scale(data,scaling,scale,level){
     // alert(JSON.stringify(data))
     //alert(JSON.stringify(scaling))

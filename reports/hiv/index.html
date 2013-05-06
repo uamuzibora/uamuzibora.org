@@ -1,0 +1,95 @@
+---
+layout: normal
+title: HIV Report
+extra: dashboard
+section: Data
+---
+<div class="row">
+  <div class="span10 offset1">
+    <ul class="nav nav-tabs" id="tablist">
+      <li class="active">
+	<a href="#enrolled" data-toggle="tab">Enrolled</a>
+      </li>
+      <li>
+	<a href="#art" data-toggle="tab">ART</a>
+      </li>
+      <li>
+	<a href="#exiting_care" data-toggle="tab">Exiting Care</a>
+      </li>
+      <li>
+	<a href="#missing_data" data-toggle="tab">Missing Data</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<form class="navbar-form pull-right" action="javascript:generateReport()">
+  <input class="span2" type="text" id="startDate">
+
+<input class="span2" type="text" id="endDate">
+
+<select id="location">
+  <option value="all">All</option>
+  <option value="Kakamega PGH CCC">Kakamega PGH CCC</option>
+  <option value="Vihiga DH CCC">Vihiga DH CCC</option>
+  <option value="Emusanda CCC">Emusanda CCC</option>
+  <option value="Bushiri CCC">Bushiri CCC</option>
+  <option value="Kakamega PGH MCH">Kakamega PGH MCH</option>
+  <option value="Vihiga DH MCH">Vihiga DH MCH</option>
+</select>
+<button type="submit" class="btn" onClick="">Generate Report</button>
+</form>
+
+<div class="row">
+  <div class="span12 tab-content">
+    <div class="tab-pane active" id="enrolled">
+      <div class="row">
+	<div class="span12">
+	  <h2 class="chart-header">Patients Enrolled by Patient Source</h2>
+	  <div id="patient_source"></div>
+	</div>
+      </div>
+    </div>
+    <div class="tab-pane" id="art">
+      <div class="row">
+	<div class="span12">
+	  <h2 class="chart-header">Patients on ART by WHO Stage</h2>
+	  <div id="art_who">
+	  </div>
+	</div>
+      </div>
+      <hr>
+      <div class="row">
+	<div class="span12">
+	  <h2 class="chart-header">Patients Enrolled by CD4 count</h2>
+	  <div id="on_cd4">
+	  </div>
+	</div>
+      </div>
+      <hr>
+      <div class="row">
+	<div class="span12">
+	  <h2 class="chart-header">Patients eligible for ART, but not on ART</h2>
+	  <div id="no_art_eligible"></div>
+	</div>
+      </div>
+    </div>
+    <div class="tab-pane" id="exiting_care">
+      <div class="row">
+	<div class="span12">
+	  <h2 class="chart-header">Reason for Exiting Care</h2>
+	  <div id="exiting_care_table"></div>
+	</div>
+      </div>
+    </div>
+    <div class="tab-pane" id="missing_data">
+      <div class="row">
+	<div class="span12">
+	  <h2 class="chart-header">Patients Missing Data</h2>
+	  <div id="missing_data_table"></div>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+

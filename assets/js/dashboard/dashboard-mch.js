@@ -12,7 +12,7 @@ function load_numbers(){
     keys.sort();
 
     first_date = keys[0]
-    first_date_d = new Date(first_date)
+    first_date_d = new Date("May 6, 2013")
     percent_date=first_date
     percent_date_d=first_date_d
     keys.reverse()
@@ -34,7 +34,6 @@ function load_numbers(){
     } else {
     $('#womenEnrolledPercent').html('<h2 class="dashnum text-error">(' + enrolled_percent + '%)</h2>');
     }
-    $('#womenEnrolledPercent').html('<h2 class="dashnum muted">(%)</h2>');
 
     //Deliveries
     deliveries=jdata[latest_date]["deliveries"]
@@ -45,7 +44,6 @@ function load_numbers(){
     } else {
     $('#deliveryPercent').html('<h2 class="dashnum text-error">(' + delivery_percent + '%)</h2>');
     }
-    $('#deliveryPercent').html('<h2 class="dashnum muted">(%)</h2>');
     //Children Enrolled
     children={}
     keys.sort();
@@ -64,7 +62,6 @@ function load_numbers(){
     } else {
     $('#childrenPercent').html('<h2 class="dashnum text-error">(' + children_percent + '%)</h2>');
     }
-    $('#childrenPercent').html('<h2 class="dashnum muted">(%)</h2>');
                  
     //HIV Positive and on HAART
     hiv_positive=jdata[latest_date]["hiv_positive"][0]+jdata[latest_date]["hiv_positive"][1]
@@ -78,7 +75,6 @@ function load_numbers(){
     } else {
     $('#haartPercent').html('<h2 class="dashnum text-error">(' + haart_percent + '%)</h2>');
     }
-    $('#haartPercent').html('<h2 class="dashnum muted">(%)</h2>');
 
 
 
@@ -104,7 +100,6 @@ function load_numbers(){
     } else {
     $('#completedRecordsPercent').html('<h2 class="dashnum text-error">(+' + percent_change_complete_records + '%)</h2>');
     }
-    $('#completedRecordsPercent').html('<h2 class="dashnum muted">(%)</h2>');
     //Overview
 
     //Pie chart HIV positive women
