@@ -10,11 +10,10 @@ function percent(then,now,percent){
 function load_numbers(){
     var keys = Object.keys(jdata);
     keys.sort();
-
     first_date = keys[0]
     first_date_d = new Date(first_date)
-    percent_date=first_date
-    percent_date_d=first_date_d
+    percent_date="2013-05-06T03:11:42.633000"
+    percent_date_d= new Date(percent_date)
     keys.reverse()
     latest_date = keys[0]
     latest_date_d = new Date(latest_date);
@@ -34,7 +33,6 @@ function load_numbers(){
     } else {
     $('#womenEnrolledPercent').html('<h2 class="dashnum text-error">(' + enrolled_percent + '%)</h2>');
     }
-    $('#womenEnrolledPercent').html('<h2 class="dashnum muted">(%)</h2>');
 
     //Deliveries
     deliveries=jdata[latest_date]["deliveries"]
@@ -45,7 +43,6 @@ function load_numbers(){
     } else {
     $('#deliveryPercent').html('<h2 class="dashnum text-error">(' + delivery_percent + '%)</h2>');
     }
-    $('#deliveryPercent').html('<h2 class="dashnum muted">(%)</h2>');
     //Children Enrolled
     children={}
     keys.sort();
@@ -64,7 +61,6 @@ function load_numbers(){
     } else {
     $('#childrenPercent').html('<h2 class="dashnum text-error">(' + children_percent + '%)</h2>');
     }
-    $('#childrenPercent').html('<h2 class="dashnum muted">(%)</h2>');
                  
     //HIV Positive and on HAART
     hiv_positive=jdata[latest_date]["hiv_positive"][0]+jdata[latest_date]["hiv_positive"][1]
@@ -78,7 +74,6 @@ function load_numbers(){
     } else {
     $('#haartPercent').html('<h2 class="dashnum text-error">(' + haart_percent + '%)</h2>');
     }
-    $('#haartPercent').html('<h2 class="dashnum muted">(%)</h2>');
 
 
 
@@ -92,7 +87,6 @@ function load_numbers(){
     } else {
     $('#ipt13Percent').html('<h2 class="dashnum text-error">(' + ipt13_percent + '%)</h2>');
     }
-    $('#ipt13Percent').html('<h2 class="dashnum muted">(%)</h2>')
     //Complete Records
     complete_records=jdata[latest_date]["complete_records"]
     $('#completedRecords').html('<h1 class="dashnum">' + addCommas(complete_records) + '</h1>');
@@ -104,7 +98,6 @@ function load_numbers(){
     } else {
     $('#completedRecordsPercent').html('<h2 class="dashnum text-error">(+' + percent_change_complete_records + '%)</h2>');
     }
-    $('#completedRecordsPercent').html('<h2 class="dashnum muted">(%)</h2>');
     //Overview
 
     //Pie chart HIV positive women

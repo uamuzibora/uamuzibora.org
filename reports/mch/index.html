@@ -1,0 +1,69 @@
+---
+layout: normal
+title: MCH Report
+extra: dashboard
+section: Reports
+---
+<div class="row">
+  <div class="span10 offset1">
+    <ul class="nav nav-tabs" id="tablist">
+      <li class="active">
+	<a href="#enrolled" data-toggle="tab">Enrolled</a>
+      </li>
+      <li>
+	<a href="#clinical" data-toggle="tab">Clinical</a>
+      </li>
+      <li>
+	<a href="#missing_data" data-toggle="tab">Missing Data</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<form class="navbar-form pull-right" action="javascript:generateReport()">
+  <input class="span2" type="text" id="startDate">
+
+<input class="span2" type="text" id="endDate">
+
+<select id="location">
+  <option value="all">All</option>
+</select>
+<button type="submit" class="btn" onClick="">Generate Report</button>
+</form>
+
+<div class="row">
+  <div class="span12 tab-content">
+    <div class="tab-pane active" id="enrolled">
+      <div class="row">
+	<div class="span12">
+	  <h2 class="chart-header">Enrolled Women and Children</h2>
+	  <div id="women_enrolled"></div>
+	</div>
+      </div>
+      <div class="row">
+	<div class="span12">
+	  <div id="children_enrolled">
+	  </div>
+	</div>
+      </div>
+    </div>
+    <div class="tab-pane" id="clinical">
+      <div class="row">
+	<div class="span12">
+	  <h2 class="chart-header">Preventive Services Provided</h2>
+	  <div id="clinical_table">
+	  </div>
+	</div>
+      </div>
+    </div>
+    <div class="tab-pane" id="missing_data">
+      <div class="row">
+	<div class="span12">
+ 	 <h2 class="chart-header">Missing Data</h2>
+	  <div id="missing_data_table"></div>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+

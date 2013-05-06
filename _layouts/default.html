@@ -55,6 +55,12 @@
 										<li><a href="{{ site.url }}{{ site.baseurl }}data">Our Data &amp; API</a></li>
 									</ul>
 								</li>
+								{% if page.section == "Reports" %}<li class="active dropdown">{% else %}<li class="dropdown">{% endif %}<a href="#" class="dropdown-toggle" data-toggle="dropdown">Reports <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="{{ site.url }}{{ site.baseurl }}reports/hiv">HIV Reports</a></li>
+										<li><a href="{{ site.url }}{{ site.baseurl }}reports/mch">MCH Reports</a></li>
+									</ul>
+								</li>
 								<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Demo <b class="caret"></b></a>
 									<ul class="dropdown-menu">
 										<li><a href="{{ site.url }}{{ site.baseurl }}demo/hiv">HIV EMR Demo</a></li>
@@ -88,6 +94,12 @@
 		{% if page.title == 'MCH Dashboard' %}
 		<script src="{{ site.url }}{{ site.baseurl }}assets/js/dashboard/data_mch.js"></script>
 		<script src="{{ site.url }}{{ site.baseurl }}assets/js/dashboard/dashboard-mch.js"></script>
+		{% endif %}
+		{% if page.title == 'HIV Report' %}
+		<script src="{{ site.url }}{{ site.baseurl }}assets/js/dashboard/report-hiv.js"></script>
+		{% endif %}
+		{% if page.title == 'MCH Report' %}
+		<script src="{{ site.url }}{{ site.baseurl }}assets/js/dashboard/report-mch.js"></script>
 		{% endif %}
 		{% endif %}
 		<script type="text/x-mathjax-config">
