@@ -6,7 +6,7 @@ section: About
 order: 1
 ---
 
-<p class="lead">We are a UK charity working to improve public health and primary care in Kenya.</p>
+<p class="lead">We are a medical project working to improve public health and primary care in Kenya.</p>
 
 Uamuzi Bora means _a better choice_ in Swahili and was chosen by the local communities to describe the work we do.
 
