@@ -6,7 +6,7 @@ section: About
 order: 2
 ---
 
-<p class="lead">Uamuzi Bora was founded in 2009 to address gaps in referral from HIV testing to care. Today we are a pilot programme for a national electronic medical record, improving care for more than 13,000 patients.</p>
+<p class="lead">Uamuzi Bora was founded in 2009 to address gaps in referral from HIV testing to care. Today we are a pilot programme for a national electronic medical record, improving care for more than 17,000 patients.</p>
 
 In 2008, 50,000 people attended a community-based campaign of HIV testing in Western Kenya, linked with the distribution of a preventive care package called [CarePack](http://www.vestergaard-frandsen.com/carepack), and nearly 2,000 people tested positive for HIV. The campaign was funded by [Vestergaard Frandsen](http://www.vestergaard-frandsen.com) and implemented in partnership with the [Ministry of Health in Kenya](http://www.publichealth.go.ke).
 
@@ -22,7 +22,7 @@ In 2010, we returned to update the system and enrolled _all_ HIV patients regist
 
 In 2012, we received a grant from [Grand Challenges Canada](http://www.grandchallenges.ca/) to continue to develop the EMR and expand to other clinics. We migrated the system to [OpenMRS](http://www.openmrs.org) to ensure all data adhered to national and international standards.
 
-In 2013, more than 13,000 HIV patients are registered in the EMR, which is implemented in two hospitals and four health clinics. 
+At the end of 2013, more than 17,000 HIV patients are registered in the EMR, which is implemented in two hospitals and three health clinics. 
 
 We are helping to monitor all aspects of [HIV care](/projects/hiv), from testing, adherence to therapy and retention in care and we have been selected as a pilot for a future national system.
 

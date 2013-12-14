@@ -119,7 +119,9 @@ body {
 .spacer-background-Data {
   background: url(../img/banner-about.jpg) top center no-repeat fixed;
 }
-
+.spacer-background-Resources {
+  background: url(../img/banner-resources.jpg) top center no-repeat fixed;
+}
 .no-photo-spacer {
   padding-top: 70px;
 }

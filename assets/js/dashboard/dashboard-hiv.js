@@ -178,6 +178,12 @@ function load_numbers(){
     //Eligible not on art timeline
     eligible_no_art_time=extractTimeData(jdata,"eligible_no_art",group="location")
     eligible_no_art_percent_time=scale(eligible_no_art_time,total_eligible_time,1,3)
+    
+    //Eilibible and active on art
+    eligible_active_no_art_time=extractTimeData(jdata,"eligible_no_art_active",group="location")
+    eligible_active_time=extractTimeData(jdata,"eligible_active",group="location")
+    eligible_active_no_art_percent_time=scale(eligible_no_art_time,eligible_active_time,1,3)
+    
 
     //Charts for Follow-up 
     //Timeline for lost to follow-up
@@ -242,6 +248,7 @@ function load_numbers(){
 
 	timeline_nv(on_art_who_stage_time,"clinical_on_art_by_who_stage_timeline_chart",'Date','Patients');
 	line_chart(eligible_no_art_percent_time,"clinical_eligible_not_on_art_timeline_chart",0,'Date','Patients');
+	line_chart(eligible_active_no_art_percent_time,"clinical_eligible_not_on_art_active_timeline_chart",0,'Date','Patients');
 	multi_bar_chart(first_who_age_gender,"clinical_initial_who_multibar_chart");
 	multi_bar_chart(cd4_age_gender,"clinical_initial_cd4_multibar_chart");
     });

@@ -10,10 +10,10 @@ order: 1
 
 Our EMR supports four key functions:
 
- 1. **Data verification** - to improve the completeness and accuracy of the patient record by running automated database queries and by enabling health records clerks to identify and update incomplete records.
+ 1. **Data verification** - to improve the completeness and accuracy of the patient record by running automated database queries every 24 hours and by enabling health records clerks to identify and update incomplete records.
 
- 2. **Clinical reminders** - to support clinicians during consultations through the use of clinical decision support.
+ 2. **Clinical decision support** - to verify clinical standards in every patient record every 24 hours and to support clinicians during consultations through the use of clinical decision support.
 
- 3. **Follow up** - to identify patients who have exited care and ensure they are contacted, either by SMS reminder or by phone call, to support return to clinic and retention in care.
+ 3. **Follow up** - to identify patients who have exited care and ensure they are contacted, by SMS reminder and by phone call, to support return to clinic and retention in care.
 
  4. **Reporting** - to create standardised reports for the Ministry of Health that can be accessed at clinic, district, provincial and national levels to inform public health and clinical decision making.
