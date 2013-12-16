@@ -265,7 +265,7 @@ body {
     height: 500px;
 }
 .slide-3 {
-    background: url(../img/slides/slide-6.jpg) no-repeat center center;
+    background: url(../img/slides/slide-3.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -283,6 +283,24 @@ body {
 }
 
 .slide-5 {
+    background: url(../img/slides/slide-5.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 500px;
+}
+
+.slide-6 {
+    background: url(../img/slides/slide-6.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 500px;
+}
+
+.slide-7 {
     background: url(../img/slides/slide-7.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;

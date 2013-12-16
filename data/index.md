@@ -5,7 +5,7 @@ header: Our data
 section: Data
 ---
 
-<p class="lead">As an electronic medical record, Uamuzi Bora inherently captures and stores patient identifiable information. Here we explain how we collect, store, protect, and use the data to calculate our indicators. Further, we now share aggregated data with selected partners using an API.</p>
+<p class="lead">We would like to explain how we collect, store, protect, and use the data to calculate our indicators. Further, we now share aggregated data with selected partners using an API.</p>
 
 ## Data collection and storage
 

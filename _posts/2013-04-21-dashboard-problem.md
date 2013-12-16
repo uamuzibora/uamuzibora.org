@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Indicator Dashboard is not working
-author: John
+author: Uamuzi Bora
 ---
 
 On 16th April we experienced heavy storms in Kakamega which damaged our radio antenna and connnection to the server. 
