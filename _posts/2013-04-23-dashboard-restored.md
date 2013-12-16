@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Indicator Dashboard now working!
-author: John
+author: Uamuzi Bora
 ---
 
 We are happy to inform you the Indicator Dashboard is now back up and running.

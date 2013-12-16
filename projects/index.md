@@ -6,9 +6,9 @@ section: Projects
 order: 1
 ---
 
-<p class="lead">We support the <a href="http://www.publichealth.go.ke">Ministry of Health</a> and partners in Kenya to implement mobile information technology and an electronic medical record for <a href="/projects/hiv">HIV</a> and <a href="/projects/mch">Maternal and Child Health</a>.</p>
+<p class="lead">We develop and implement mobile information technology and an electronic medical record to make real-time health information available at different levels of the health service to improve clinical and public health decision-making.</p>
 
-Our EMR supports four key functions:
+_The [HIV](/projects/hiv)  and [Maternal and Child Health](/projects/mch) EMR work supports:_
 
  1. **Data verification** - to improve the completeness and accuracy of the patient record by running automated database queries every 24 hours and by enabling health records clerks to identify and update incomplete records.
 
@@ -17,3 +17,8 @@ Our EMR supports four key functions:
  3. **Follow up** - to identify patients who have exited care and ensure they are contacted, by SMS reminder and by phone call, to support return to clinic and retention in care.
 
  4. **Reporting** - to create standardised reports for the Ministry of Health that can be accessed at clinic, district, provincial and national levels to inform public health and clinical decision making.
+
+
+_The [Child Health](/projects/child) mobile IT work supports:_
+
+ 1. **Clinical decision support** - to follow Integrated Management of Childhood Illness (IMCI) algorithm using mobile information technology to standardise diagnosis and treatment at child under five outpatient clinics.
